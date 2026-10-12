@@ -903,10 +903,14 @@ remove */}
               />
         </div></div></div>
                 
-   <p className="text-forest-400 text-sm">
-            Para sa mga katanungan <br></br>
-     Huwag mag-alinlangan na makipag-ugnayan sa amin
-          </p>           
+ <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
+          <h3 className="font-serif text-3xl font-bold text-white">
+            Para sa mga <span className="text-gold-gradient">Katanungan</span>
+          </h3>
+          <p className="text-forest-200">
+            Huwag mag-alinlangan na makipag-ugnayan sa amin
+          </p>
+ </div>      
           
           <div className="flex flex-wrap justify-center gap-4">
             <a
