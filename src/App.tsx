@@ -903,7 +903,10 @@ remove */}
               />
         </div></div></div>
                 
-              
+   <p className="text-forest-400 text-sm">
+            Para sa mga katanungan <br></br>
+     Huwag mag-alinlangan na makipag-ugnayan sa amin
+          </p>           
           
           <div className="flex flex-wrap justify-center gap-4">
             <a
