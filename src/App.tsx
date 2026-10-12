@@ -566,7 +566,7 @@ export default function App() {
               className="w-full aspect-video object-cover"
               controls
               playsInline
-              poster="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE2.png"
+       //       poster="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE2.png"
               onPlay={() => setVideoPlaying(true)}
               onPause={() => setVideoPlaying(false)}
             >
