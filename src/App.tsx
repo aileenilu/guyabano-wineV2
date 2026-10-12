@@ -917,9 +917,9 @@ remove */}
           <p className="text-forest-200">
             1. Paano ang pag-inom ng Nature's Finest Guyabano Wine?
           </p>
-            <p className="text-gold-200">
+            <div className="text-gold-200">
             Drink 60ml before bedtime
-          </p>
+          </div>
         </div>
             
           <div className="flex flex-wrap justify-center gap-4">
