@@ -612,11 +612,11 @@ export default function App() {
             </div>     
       </section>
 
-         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="relative overflow-hidden shadow-2xl">
+         <div className="w-full flex justify-center items-center text-center space-y-6">
+          <div className="relative mx-auto w-fit overflow-hidden rounded-2xl shadow-2xl border border-forest-700">
             <video
               ref={videoRef}
-              className="w-28 h-28"
+              className="w-full max-w-4xl h-auto block"
               controls
               playsInline
        //       poster="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE2.png"
