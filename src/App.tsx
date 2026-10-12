@@ -939,7 +939,7 @@ remove */}
 • Pusit (Squid) <br></br>
 • Hipon (Shrimp) <br></br>
 • Itlog na hindi native (Commercial / poultry eggs, maliban sa native) <br></br>
-• Manok (Poultry chicken) <br></br>
+• Manok (Poultry chicken) 
           </span>
           </p>
             </div> 
