@@ -592,6 +592,8 @@ remove */}
                 YES! I WANT TO ORDER NOW <ArrowRight className="w-5 h-5" />
               </button>
 </div>     
+
+            <div> <p> <br></br> <br></br>   </p> </div>
         <div>
               <img
                 src="/testimony2.jpg"
