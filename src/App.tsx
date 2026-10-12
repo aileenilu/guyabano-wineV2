@@ -893,7 +893,7 @@ remove */}
           </span> <br />
           </p> <br />
           </div>
-          <div>
+          <div classname="flex items-center justify-center">
              <img
                 src="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE.jpg"
                 alt="Nature's Finest Guyabano Wine"
