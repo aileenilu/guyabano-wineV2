@@ -913,12 +913,14 @@ remove */}
           <h3 className="font-serif text-3xl font-bold text-white">
              <span className="text-gold-gradient">Frequently Asked Questions</span>
           </h3>
+        <div className="max-w-4xl mx-auto px-4 text-left space-y-6">
           <p className="text-forest-200">
             1. Paano ang pag-inom ng Nature's Finest Guyabano Wine?
           </p>
             <p className="text-gold-200">
             Drink 60ml before bedtime
           </p>
+        </div>
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="tel:09496252124"
