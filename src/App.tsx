@@ -127,6 +127,7 @@ const packages = [
     price: 1750,
     perBottle: 1750,
     tag: null,
+    sf: 99,
     highlight: false,
   },
   {
@@ -136,6 +137,7 @@ const packages = [
     price: 2998,
     perBottle: 1499,
     tag: "BEST VALUE",
+    sf: 149,
     highlight: true,
   },
 ];
