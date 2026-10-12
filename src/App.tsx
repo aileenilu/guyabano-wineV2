@@ -557,6 +557,9 @@ remove */}
 
          <div className="w-full flex justify-center items-center text-center space-y-6 bg-transparent">
           <div className="relative mx-auto w-fit overflow-hidden rounded-2xl shadow-2xl border border-forest-700">
+            <p className="text-forest-200 text-lg">
+            <span className="text-gold-gradient">"Click to Watch Video"</span> 
+          </p>
             <video
               ref={videoRef2}
               className="w-full max-w-4xl h-auto block"
