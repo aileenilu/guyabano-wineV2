@@ -941,8 +941,9 @@ remove */}
 • Hipon (Shrimp) <br></br>
 • Itlog na hindi native (Commercial / poultry eggs, maliban sa native) <br></br>
 • Manok (Poultry chicken) 
-          </span>
-          </p> </div>
+          </span> <br></br>
+          </p> <br></br>
+          </div>
             </div> 
             </div>
             </div>
@@ -958,6 +959,7 @@ remove */}
               <span className="font-semibold">09496252124</span>
             </a>
           </div>
+          
           <p className="text-forest-400 text-sm">
             Mag-Direct Message para sa mas mabilis na tugon
           </p>
