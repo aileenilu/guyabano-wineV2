@@ -139,6 +139,18 @@ export default function App() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+// Automatically redirects to Messenger when the order is submitted
+useEffect(() => {
+  if (submitted) {
+    const timer = setTimeout(() => {
+      // Replaces current page window with your Messenger URL
+      window.location.href = "https://m.me"; 
+    }, 2500); // 2500ms = 2.5 seconds delay
+
+    return () => clearTimeout(timer); // Clean up the timer if component unmounts
+  }
+}, [submitted]);
+  
   const scrollToOrder = () => {
     orderRef.current?.scrollIntoView({ behavior: "smooth" });
   };
