@@ -549,6 +549,16 @@ export default function App() {
             </p>
           </div>
 
+        <div> <p> <br></br> <br></br>   </p> </div>
+            <div>
+              <img
+                src="/testimony2.jpg"
+                alt="Testimonials"
+                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
+              />
+            </div>
+
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <div
@@ -598,15 +608,6 @@ export default function App() {
                 className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
               />
             </div>
-        <div> <p> <br></br> <br></br>   </p> </div>
-            <div>
-              <img
-                src="/testimony2.jpg"
-                alt="Testimonials"
-                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
-              />
-            </div>
-
       </section>
 
       {/* ORDER SECTION */}
