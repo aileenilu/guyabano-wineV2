@@ -549,7 +549,7 @@ export default function App() {
             </p>
           </div>
 
-        <div> <p> <br></br> <br></br>   </p> </div>
+        <div>  </div>
             <div>
               <img
                 src="/testimony2.jpg"
