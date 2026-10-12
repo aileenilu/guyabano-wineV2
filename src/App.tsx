@@ -586,6 +586,13 @@ export default function App() {
                   ))}
                 </div>
                 <div className="text-forest-300 text-sm">Batay sa 500+ reviews</div>
+            <div>
+              <img
+                src="/701507958_1023553253431513_1977904653140737869_n.jpg"
+                alt="Guyabano Wine Bottles"
+                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
+              />
+            </div>
               </div>
             </div>
           </div>
