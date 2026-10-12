@@ -559,7 +559,7 @@ export default function App() {
             </div>
         <div> <p> <br></br> <br></br>   </p> </div>
 
-        <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
+        <div className="max-w-10xl mx-auto px-4 text-center space-y-6">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-forest-700">
             <video
               ref={videoRef}
@@ -577,7 +577,7 @@ export default function App() {
                 className="absolute inset-0 flex items-center justify-center bg-black/30 group"
                 onClick={() => videoRef.current?.play()}
               >
-                <div className="w-50 h-20 bg-gold-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
+                <div className="w-20 h-20 bg-gold-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
                   <div className="w-0 h-0 border-l-[28px] border-l-forest-950 border-t-[18px] border-t-transparent border-b-[18px] border-b-transparent ml-2" />
                 </div>
               </button>
