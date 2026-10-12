@@ -590,7 +590,7 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div> <p> / </p> </div>
+        <div> <p>    </p> </div>
             <div>
               <img
                 src="/701507958_1023553253431513_1977904653140737869_n.jpg"
