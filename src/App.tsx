@@ -555,6 +555,7 @@ remove */}
               className="w-full max-w-4xl h-auto block"
               controls
               playsInline
+              poster="/testimony3.jpg"
               onPlay={() => setVideoPlaying(true)}
               onPause={() => setVideoPlaying(false)}
             >
