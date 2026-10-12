@@ -764,12 +764,7 @@ remove */}
     <div className="font-bold text-white text-base leading-tight min-h-[44px] flex items-center">
       {pkg.title}
     </div>
-    <div className="text-gold-400 font-bold text-2xl mt-1">
-      ₱{pkg.price.toLocaleString("en-PH")}
-    </div>
-    <div className="text-forest-300 text-xs mt-1">
-      ₱{pkg.perBottle.toLocaleString("en-PH")} / bote
-    </div>
+    
   </div>
 
   {selectedPackage === pkg.id && (
