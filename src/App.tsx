@@ -560,7 +560,7 @@ export default function App() {
         <div> <p> <br></br> <br></br>   </p> </div>
 
         <div className="max-w-full mx-auto text-center space-y-6">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-forest-700">
+          <div className="relative overflow-hidden shadow-2xl">
             <video
               ref={videoRef}
               className="w-full aspect-video object-cover"
