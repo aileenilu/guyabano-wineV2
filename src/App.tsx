@@ -491,7 +491,7 @@ export default function App() {
 remove */}
       
       {/* SECOND PRODUCT IMAGE */}
-      <section className="bg-gradient-to-b from-forest-900 to-forest-950 py-20">
+      <section id="benefits" className="bg-gradient-to-b from-forest-900 to-forest-950 py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-white">
