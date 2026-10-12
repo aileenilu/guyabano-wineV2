@@ -892,14 +892,15 @@ remove */}
 • Manok (Poultry chicken) 
           </span> <br />
           </p> <br />
-        <div className="absolute inset-0 bg-gold-500/20 rounded-full blur-3xl scale-75" />
+          </div>
+          <div className="relative animate-float">
+              <div className="absolute inset-0 bg-gold-500/20 rounded-full blur-3xl scale-75" />
               <img
                 src="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE.jpg"
                 alt="Nature's Finest Guyabano Wine"
-                className="relative w-full max-w-sm lg:max-w-md object-contain drop-shadow-2xl" />
+                className="relative w-full max-w-sm lg:max-w-md object-contain drop-shadow-2xl"
+              />
             </div>
-          
-          
           </div>
             </div> 
             </div>
