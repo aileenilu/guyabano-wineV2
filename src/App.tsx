@@ -559,6 +559,39 @@ export default function App() {
             </div>
         <div> <p> <br></br> <br></br>   </p> </div>
 
+        <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white">
+            Panoorin: Ang{" "}
+            <span className="text-gold-gradient">Rekomendasyon ni Doc Atoie</span> 
+          </h2>
+          <p className="text-forest-200 text-lg">
+            Alamin kung bakit ito ang pinaka-pinagkakatiwalaang wellness drink sa Pilipinas
+          </p>
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-forest-700">
+            <video
+              ref={videoRef}
+              className="w-full aspect-video object-cover"
+              controls
+              playsInline
+              poster="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE2.png"
+              onPlay={() => setVideoPlaying(true)}
+              onPause={() => setVideoPlaying(false)}
+            >
+              <source src="/testimonyvid.mp4" type="video/mp4" />
+            </video>
+            {!videoPlaying && (
+              <button
+                className="absolute inset-0 flex items-center justify-center bg-black/30 group"
+                onClick={() => videoRef.current?.play()}
+              >
+                <div className="w-20 h-20 bg-gold-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
+                  <div className="w-0 h-0 border-l-[28px] border-l-forest-950 border-t-[18px] border-t-transparent border-b-[18px] border-b-transparent ml-2" />
+                </div>
+              </button>
+            )}
+          </div>
+        </div>
+          
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
