@@ -572,7 +572,7 @@ remove */}
                 <div className="w-20 h-20 bg-gold-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
                   <div className="w-0 h-0 border-l-[28px] border-l-forest-950 border-t-[18px] border-t-transparent border-b-[18px] border-b-transparent ml-2" />
                 </div>
- //             </button>
+ //---             </button>FF
             )}
           </div>
         </div>
