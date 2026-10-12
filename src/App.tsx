@@ -559,7 +559,7 @@ export default function App() {
             </div>
         <div> <p> <br></br> <br></br>   </p> </div>
 
-        <div className="max-w-10xl mx-auto px-4 text-center space-y-6">
+        <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-forest-700">
             <video
               ref={videoRef}
