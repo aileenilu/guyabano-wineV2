@@ -169,6 +169,7 @@ export default function App() {
   const [submitError, setSubmitError] = useState("");
   const [videoPlaying, setVideoPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRef2 = useRef<HTMLVideoElement>(null);
   const orderRef = useRef<HTMLDivElement>(null);
   const [scrolled, setScrolled] = useState(false);
 
@@ -554,7 +555,7 @@ remove */}
          <div className="w-full flex justify-center items-center text-center space-y-6 bg-transparent">
           <div className="relative mx-auto w-fit overflow-hidden rounded-2xl shadow-2xl border border-forest-700">
             <video
-              ref={videoRef}
+              ref={videoRef2}
               className="w-full max-w-4xl h-auto block"
               controls
               playsInline
@@ -567,7 +568,7 @@ remove */}
             {!videoPlaying && (
               <button
                 className="absolute inset-0 flex items-center justify-center bg-black/30 group"
-                onClick={() => videoRef.current?.play()}
+                onClick={() => videoRef2.current?.play()}
               >
                 <div className="w-20 h-20 bg-gold-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
                   <div className="w-0 h-0 border-l-[28px] border-l-forest-950 border-t-[18px] border-t-transparent border-b-[18px] border-b-transparent ml-2" />
