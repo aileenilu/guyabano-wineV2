@@ -129,6 +129,7 @@ const packages = [
     tag: null,
     sf: 99,
     total: 1849,
+    disc: null,
     highlight: false,
   },
   {
@@ -140,6 +141,7 @@ const packages = [
     tag: "BEST VALUE",
     sf: 149,
     total: 3147,
+    disc: 551,
     highlight: true,
   },
 ];
