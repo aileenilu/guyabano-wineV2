@@ -583,7 +583,6 @@ remove */}
             )}
           </div>
         </div>
-   <div> <p> <br></br> <br></br>   </p> </div>
           
 <div className="w-full flex justify-center items-center py-4">
    <button
