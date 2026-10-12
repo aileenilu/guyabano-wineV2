@@ -730,7 +730,7 @@ remove */}
             >
               {/* Package selection */}
               <div className="space-y-3">
-                <label className="block text-white font-semibold">Pumili ang Package...</label>
+                <label className="block text-white font-semibold">Pumili ang Package</label>
                 <div className="grid grid-cols-2 gap-4">
                   {packages.map((pkg) => (
                     <button
