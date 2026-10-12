@@ -928,13 +928,7 @@ remove */}
             <span className="text-gold-200">
             Yes, for prevention para makaiwas ka sa anumang sakit.
           </span>
-          </p
-          <p className="text-forest-200">
-            2. Pwede bang uminom ng Guyabano Wine kahit walang sakit? <br></br>
-            <span className="text-gold-200">
-            Yes, for prevention para makaiwas ka sa anumang sakit.
-          </span>
-          </p 
+          </p>
             </div> 
             </div>
             </div>
