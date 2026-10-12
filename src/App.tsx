@@ -144,7 +144,7 @@ useEffect(() => {
   if (submitted) {
     const timer = setTimeout(() => {
       // Replaces current page window with your Messenger URL
-      window.location.href = "https://m.me"; 
+      window.location.href = "https://m.me/ZynergiaSagipKalusugan"; 
     }, 2500); // 2500ms = 2.5 seconds delay
 
     return () => clearTimeout(timer); // Clean up the timer if component unmounts
@@ -663,34 +663,34 @@ remove */}
             </p>
           </div>
 
-          {submitted ? (
-            <div className="bg-forest-800 border border-green-500/40 rounded-2xl p-10 text-center space-y-5">
-              <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto">
-                <CheckCircle2 className="w-10 h-10 text-green-400" />
-              </div>
-              <h3 className="text-2xl font-bold text-white">Salamat sa iyong Order!</h3>
-              <p className="text-forest-200 leading-relaxed">
-                Natanggap na namin ang iyong impormasyon. Makikipag-ugnayan sa inyo ang aming team sa
-                loob ng <strong className="text-gold-300">24 na oras</strong> para sa kumpirmasyon ng
-                inyong order at delivery details.
-              </p>
-              {/* Order Again remove
-             <button
-                onClick={() => {
-                  setSubmitted(false);
-                  setForm({ full_name: "", phone: "", address: "", package: "2_bottle", notes: "" });
-                  setSelectedPackage("2_bottle");
-                }}
-                className="text-gold-400 underline text-sm hover:text-gold-300 transition-colors"
-              >
-                Mag-order ulit
-              </button>  remove */}
-            </div>
-          ) : (
-            <form
-              onSubmit={handleSubmit}
-              className="bg-forest-800/60 border border-forest-700/50 rounded-2xl p-8 space-y-6"
-            >
+{submitted ? (
+  <div className="bg-forest-800 border border-green-500/40 rounded-2xl p-10 text-center space-y-6">
+    <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto animate-bounce">
+      <CheckCircle2 className="w-10 h-10 text-green-400" />
+    </div>
+    
+    <h3 className="text-2xl font-bold text-white">Salamat sa iyong Order!</h3>
+    
+    <p className="text-forest-200 leading-relaxed">
+      Natanggap na namin ang iyong impormasyon. Makikipag-ugnayan sa inyo ang aming team sa
+      loob ng <strong className="text-gold-300">24 na oras</strong> para sa kumpirmasyon ng
+      inyong order at delivery details.
+    </p>
+
+    {/* Redirect Notice Bar */}
+    <div className="bg-forest-900/60 border border-forest-700 rounded-xl p-4 max-w-md mx-auto flex items-center justify-center gap-3">
+      <div className="w-4 h-4 border-2 border-gold-500 border-t-transparent rounded-full animate-spin" />
+      <p className="text-sm font-medium text-gold-400">
+        Ito ay awtomatikong magdidirekta sa iyong Messenger...
+      </p>
+    </div>
+  </div>
+) : (
+  <form
+    onSubmit={handleSubmit}
+    className="bg-forest-800/60 border border-forest-700/50 rounded-2xl p-8 space-y-6"
+  >
+
               
 {/* Package selection */}
 <div className="space-y-3">
