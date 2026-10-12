@@ -549,6 +549,31 @@ export default function App() {
             </p>
           </div>
 
+         <div className="w-full flex justify-center items-center text-center space-y-6 bg-transparent">
+          <div className="relative mx-auto w-fit overflow-hidden rounded-2xl shadow-2xl border border-forest-700">
+            <video
+              ref={videoRef}
+              className="w-full max-w-4xl h-auto block"
+              controls
+              playsInline
+       //       poster="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE2.png"
+              onPlay={() => setVideoPlaying(true)}
+              onPause={() => setVideoPlaying(false)}
+            >
+              <source src="/testimonyvid.mp4" type="video/mp4" />
+            </video>
+            {!videoPlaying && (
+              <button
+                className="absolute inset-0 flex items-center justify-center bg-black/30 group"
+                onClick={() => videoRef.current?.play()}
+              >
+                <div className="w-20 h-20 bg-gold-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
+                  <div className="w-0 h-0 border-l-[28px] border-l-forest-950 border-t-[18px] border-t-transparent border-b-[18px] border-b-transparent ml-2" />
+                </div>
+              </button>
+            )}
+          </div>
+        </div>
 
             <div>
               <img
@@ -612,31 +637,6 @@ export default function App() {
             </div>     
       </section>
 
-         <div className="w-full flex justify-center items-center text-center space-y-6 bg-transparent">
-          <div className="relative mx-auto w-fit overflow-hidden rounded-2xl shadow-2xl border border-forest-700">
-            <video
-              ref={videoRef}
-              className="w-full max-w-4xl h-auto block"
-              controls
-              playsInline
-       //       poster="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE2.png"
-              onPlay={() => setVideoPlaying(true)}
-              onPause={() => setVideoPlaying(false)}
-            >
-              <source src="/testimonyvid.mp4" type="video/mp4" />
-            </video>
-            {!videoPlaying && (
-              <button
-                className="absolute inset-0 flex items-center justify-center bg-black/30 group"
-                onClick={() => videoRef.current?.play()}
-              >
-                <div className="w-20 h-20 bg-gold-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
-                  <div className="w-0 h-0 border-l-[28px] border-l-forest-950 border-t-[18px] border-t-transparent border-b-[18px] border-b-transparent ml-2" />
-                </div>
-              </button>
-            )}
-          </div>
-        </div>
 
       
       {/* ORDER SECTION */}
