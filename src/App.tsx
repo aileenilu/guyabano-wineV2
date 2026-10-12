@@ -924,7 +924,12 @@ remove */}
           </p>
             
         </div>
-            
+            <div className="space-y-3">
+              <p className="text-forest-400 text-sm">
+            Mag-Direct Message para sa mas mabilis na tugon
+          </p>
+            </div>
+          
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="tel:09496252124"
