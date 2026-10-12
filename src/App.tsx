@@ -922,7 +922,7 @@ remove */}
             <p className="text-forest-200 text-lg">
               Punan ang form sa ibaba at makikipag-ugnayan kami sa inyo
             </p>
-          </div></div>
+          </div>
         
         
         <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
