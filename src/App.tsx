@@ -912,13 +912,15 @@ remove */}
           </div>
          
           </div>
-               <div classname="flex items-center justify-center">
+            
+        </div>
+              <div classname="flex items-center justify-center">
              <img
                 src="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE.jpg"
                 alt="Nature's Finest Guyabano Wine"
                 className="relative w-full max-w-sm lg:max-w-md object-contain drop-shadow-2xl"
               />
-        </div></div></div>
+           </div></div>
                 <br></br><br></br><br></br>
  <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
           <h3 className="font-serif text-3xl font-bold text-white">
