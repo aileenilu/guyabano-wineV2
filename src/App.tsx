@@ -612,7 +612,7 @@ export default function App() {
             </div>     
       </section>
 
-         <div className="w-full flex justify-center items-center text-center space-y-6">
+         <div className="w-full flex justify-center items-center text-center space-y-6 bg-transparent">
           <div className="relative mx-auto w-fit overflow-hidden rounded-2xl shadow-2xl border border-forest-700">
             <video
               ref={videoRef}
