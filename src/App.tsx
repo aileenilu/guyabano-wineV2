@@ -917,7 +917,7 @@ remove */}
             </div
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-white">
               Piliin Ang Iyong              
-              <span className="text-gold-gradient">Package</span>
+              
             </h2>
             <p className="text-forest-200 text-lg">
               Punan ang form sa ibaba at makikipag-ugnayan kami sa inyo
