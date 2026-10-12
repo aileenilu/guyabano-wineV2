@@ -924,7 +924,7 @@ remove */}
           </p>
             
         </div>
-            <div className="space-y-3">
+            <div className="flex flex-wrap justify-center gap-4">
               <p className="text-forest-400 text-sm">
             Mag-Direct Message para sa mas mabilis na tugon
           </p>
