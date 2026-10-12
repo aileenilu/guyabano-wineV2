@@ -755,16 +755,16 @@ remove */}
   <div className="w-full aspect-[4/3] mb-3 rounded-lg overflow-hidden bg-forest-950/30 flex items-center justify-center relative">
     <img 
       src={pkg.image || "/placeholder-package.png"} 
-      alt={pkg.title}
+      alt={pkg.label}
       className="max-w-full max-h-full object-contain pointer-events-none select-none" 
     />
   </div>
 
   <div className="w-full">
     <div className="font-bold text-white text-base leading-tight min-h-[44px] flex items-center">
-      {pkg.title}
+      {pkg.label}
     </div>
-    
+  
   </div>
 
   {selectedPackage === pkg.id && (
