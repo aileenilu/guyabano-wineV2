@@ -767,7 +767,8 @@ remove */}
   </div>
   <div className="flex items-center justify-between">
     <span className="text-forest-200 font-medium">Shipping Fee:</span>
-    <span className="text-white font-semibold">₱{selectedPkg.price.toLocaleString("en-PH")}</span
+    
+    <span className="text-forest-300 text-sm">To be calculated based on address</span>
   </div>
   <div className="border-t border-gold-500/20 pt-2 flex items-center justify-between">
     <span className="text-forest-200 font-medium">Total Amount:</span>
