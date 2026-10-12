@@ -268,7 +268,7 @@ export default function App() {
           </div>
           <button
             onClick={scrollToOrder}
-            className="btn-pulse bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-5 py-2 rounded-full text-sm transition-all duration-200 hover:scale-105 shadow-md"
+            className="btn-pulse bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-5 py-2 rounded-full text-sm transition-all duration-200 hover:scale-105 shadow-md p-absolute is-animation"
           >
             Order Now
           </button>
