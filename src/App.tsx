@@ -924,9 +924,9 @@ remove */}
           </span>
           </p>  
            <p className="text-forest-200">
-            1. Paano ang pag-inom ng Nature's Finest Guyabano Wine? <br></br>
+            1. Pwede bang uminom ng Guyabano Wine kahit walang sakit? <br></br>
             <span className="text-gold-200">
-            Drink 60ml before bedtime
+            Yes, for prevention para makaiwas ka sa anumang sakit.
           </span>
           </p>
             </div> 
