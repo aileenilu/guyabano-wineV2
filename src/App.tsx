@@ -925,6 +925,9 @@ remove */}
             </p>
           </div>
         </div>
+  <div className="bg-forest-800 border border-green-500/40 rounded-2xl p-10 text-center space-y-5">
+              <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto">
+              </div></div>
 </section>
       
       {/* CONTACT SECTION */}
