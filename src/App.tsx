@@ -911,7 +911,7 @@ remove */}
       <section className="bg-forest-950 py-12 border-t border-forest-800">
         <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
           <h3 className="font-serif text-3xl font-bold text-white">
-            Para sa mga <span className="text-gold-gradient">Frequently Asked Questions</span>
+             <span className="text-gold-gradient">Frequently Asked Questions</span>
           </h3>
           <p className="text-forest-200">
             Huwag mag-alinlangan na makipag-ugnayan sa amin
