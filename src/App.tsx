@@ -930,7 +930,7 @@ remove */}
               <div className="text-4xl font-bold text-gold-400">4.9</div>
               <div>
              <div className="text-forest-300 text-sm">Batay sa 500+ reviews</div>
-              
+              </div></div>      
 
               
           
