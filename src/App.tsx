@@ -4,14 +4,11 @@ import {
   Star,
   ShieldCheck,
   Droplets,
-  Zap,
   Heart,
   Sparkles,
   CheckCircle2,
   Phone,
   ChevronDown,
-  FlaskConical,
-  Sun,
   Award,
   ArrowRight,
   X,
@@ -28,51 +25,6 @@ function validatePHPhone(phone: string): boolean {
   const cleaned = phone.replace(/[\s\-().]/g, "");
   return /^(09\d{9}|(\+63)\d{10})$/.test(cleaned);
 }
-
-const benefits = [
-  {
-    icon: ShieldCheck,
-    title: "Immune System Support",
-    desc: "Supports immune system function sa tulong ng natural antioxidants at acetogenins",
-    color: "from-forest-600 to-forest-800",
-  },
-  {
-    icon: Leaf,
-    title: "Gut Health Promotion",
-    desc: "Promotes gut health gamit ang mga beneficial probiotics mula sa natural fermentation",
-    color: "from-forest-500 to-forest-700",
-  },
-  {
-    icon: Droplets,
-    title: "Digestive Wellness",
-    desc: "Aids sa digestive wellness at mas magandang nutrient absorption",
-    color: "from-forest-600 to-forest-800",
-  },
-  {
-    icon: FlaskConical,
-    title: "Cellular Detox",
-    desc: "Helps sa cellular detoxification at overall body cleansing",
-    color: "from-forest-500 to-forest-700",
-  },
-  {
-    icon: Zap,
-    title: "Natural Energy Boost",
-    desc: "Boosts natural energy at sumusuporta sa general vitality",
-    color: "from-forest-600 to-forest-800",
-  },
-  {
-    icon: Heart,
-    title: "All-Natural Wellness Drink",
-    desc: "Isang soothing, all-natural wellness beverage na walang synthetic ingredients",
-    color: "from-forest-500 to-forest-700",
-  },
-  {
-    icon: Sun,
-    title: "Daily Health Elixir",
-    desc: "Pwedeng i-enjoy daily o habang kumakain bilang isang health-enhancing elixir",
-    color: "from-forest-600 to-forest-800",
-  },
-];
 
 const testimonials = [
   {
@@ -441,7 +393,6 @@ export default function App() {
             <div className="order-2 lg:order-1">
               <img
                 src="/701507958_1023553253431513_1977904653140737869_n.jpg"
-              //  src="/w1.jpg"
                 alt="Guyabano Wine - Nature's Finest"
                 className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
               />
@@ -558,7 +509,6 @@ remove */}
             <div>
               <img
                 src="/w1.jpg"
-               // src="/701507958_1023553253431513_1977904653140737869_n.jpg"
                 alt="Guyabano Wine Bottles"
                 className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
               />
@@ -593,7 +543,6 @@ remove */}
               className="w-full max-w-4xl h-auto block"
               controls
               playsInline
-       //       poster="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE2.png"
               onPlay={() => setVideoPlaying(true)}
               onPause={() => setVideoPlaying(false)}
             >
@@ -621,7 +570,7 @@ remove */}
               </button>
 </div>     
 
-            <div> <p> <br></br> <br></br>   </p> </div>
+            <div> <p> <br /> <br />   </p> </div>
         <div>
               <img
                 src="/testimony2.jpg"
@@ -629,7 +578,7 @@ remove */}
                 className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
               />
             </div>
-        <div> <p> <br></br> <br></br>   </p> </div>
+        <div> <p> <br /> <br />   </p> </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
@@ -672,7 +621,7 @@ remove */}
             </div>
           </div>
         </div>
-        <div> <p> <br></br> <br></br>   </p> </div>
+        <div> <p> <br /> <br />   </p> </div>
             <div>
               <img
                 src="/testimony1.jpg"
@@ -919,30 +868,30 @@ remove */}
           </h3>          
           <div className="max-w-4xl mx-auto px-4 text-left space-y-6">
           <p className="text-forest-200">
-            1. Paano ang pag-inom ng Nature's Finest Guyabano Wine? <br></br>
+            1. Paano ang pag-inom ng Nature's Finest Guyabano Wine? <br />
             <span className="text-gold-200">
             Drink 60ml before bedtime
           </span>
           </p>  
            <p className="text-forest-200">
-            2. Pwede bang uminom ng Guyabano Wine kahit walang sakit? <br></br>
+            2. Pwede bang uminom ng Guyabano Wine kahit walang sakit? <br />
             <span className="text-gold-200">
             Yes, for prevention para makaiwas ka sa anumang sakit.
           </span>
           </p>
           <p className="text-forest-200">
-            3. Mga pagkain na dapat iwasan ng mga may bukol, cyst, tumor o cancer: <br></br>
+            3. Mga pagkain na dapat iwasan ng mga may bukol, cyst, tumor o cancer: <br />
             <span className="text-gold-200">
-            • Bagoong <br></br>
-• Alamang <br></br>
-• Patis <br></br>
-• Alimango / Alimasag / Talangka (Crabs) <br></br>
-• Pusit (Squid) <br></br>
-• Hipon (Shrimp) <br></br>
-• Itlog na hindi native (Commercial / poultry eggs, maliban sa native) <br></br>
+            • Bagoong <br />
+• Alamang <br />
+• Patis <br />
+• Alimango / Alimasag / Talangka (Crabs) <br />
+• Pusit (Squid) <br />
+• Hipon (Shrimp) <br />
+• Itlog na hindi native (Commercial / poultry eggs, maliban sa native) <br />
 • Manok (Poultry chicken) 
-          </span> <br></br>
-          </p> <br></br>
+          </span> <br />
+          </p> <br />
 
           
           </div>
