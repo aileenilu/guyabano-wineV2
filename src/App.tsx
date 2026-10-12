@@ -74,7 +74,7 @@ const testimonials = [
 const packages = [
   {
     id: "1_bottle",
-    label: "Order: 1 Bottle",
+    label: "1 Bottle",
     quantity: 1,
     price: 1550,
     perBottle: 1550,
@@ -87,7 +87,7 @@ const packages = [
   },
   {
     id: "2_bottle",
-    label: "Order: 2 Bottles",
+    label: "2 Bottles",
     quantity: 2,
     price: 2998,
     perBottle: 1499,
