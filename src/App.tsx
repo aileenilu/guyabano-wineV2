@@ -913,10 +913,11 @@ remove */}
         <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
            <div className="mt-10 flex justify-center">
             <div className="flex items-center gap-4 bg-forest-900 border border-forest-700 rounded-2xl px-8 py-5">
-        <div className="max-w-4xl mx-auto px-4 text-left space-y-6">
+        <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
 <h3 className="font-serif text-3xl font-bold text-white">
              <span className="text-gold-gradient">Frequently Asked Questions</span>
           </h3>          
+          <div className="max-w-4xl mx-auto px-4 text-left space-y-6">
           <p className="text-forest-200">
             1. Paano ang pag-inom ng Nature's Finest Guyabano Wine? <br></br>
             <span className="text-gold-200">
@@ -941,7 +942,7 @@ remove */}
 • Itlog na hindi native (Commercial / poultry eggs, maliban sa native) <br></br>
 • Manok (Poultry chicken) 
           </span>
-          </p>
+          </p> </div>
             </div> 
             </div>
             </div>
