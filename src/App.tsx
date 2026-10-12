@@ -883,7 +883,7 @@ remove */}
               <button
                 type="submit"
                 disabled={submitting}
-                className="btn-pulse w-full bg-gold-500 hover:bg-gold-400 disabled:opacity-60 disabled:cursor-not-allowed text-forest-950 font-bold py-4 rounded-xl text-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 shadow-xl animate-jump
+                className="btn-pulse w-full bg-gold-500 hover:bg-gold-400 disabled:opacity-60 disabled:cursor-not-allowed text-forest-950 font-bold py-4 rounded-xl text-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 shadow-xl animate-jump"
               >
                 {submitting ? (
                   <>
