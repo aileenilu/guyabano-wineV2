@@ -902,7 +902,7 @@ remove */}
                 className="relative w-full max-w-sm lg:max-w-md object-contain drop-shadow-2xl"
               />
         </div></div></div>
-                
+                <br></br><br></br><br></br>
  <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
           <h3 className="font-serif text-3xl font-bold text-white">
             Para sa mga <span className="text-gold-gradient">Katanungan</span>
