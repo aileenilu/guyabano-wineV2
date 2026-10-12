@@ -921,14 +921,23 @@ remove */}
             <span className="text-gold-200">
             Drink 60ml before bedtime
           </span>
-          </p>
-            
+          </p>         
         </div>
-            <div className="flex flex-wrap justify-center gap-4">
-              <p className="text-forest-400 text-sm">
-            Mag-Direct Message para sa mas mabilis na tugon
-          </p>
-            </div>
+            
+
+            <div className="mt-10 flex justify-center">
+            <div className="flex items-center gap-4 bg-forest-900 border border-forest-700 rounded-2xl px-8 py-5">
+              <div className="text-4xl font-bold text-gold-400">4.9</div>
+              <div>
+                <div className="flex gap-1 mb-1">
+                  {[1, 2, 3, 4, 5].map((s) => (
+                    <Star key={s} className="w-5 h-5 fill-gold-400 text-gold-400" />
+                  ))}
+                </div>
+                <div className="text-forest-300 text-sm">Batay sa 500+ reviews</div>
+              </div>
+
+              
           
           <div className="flex flex-wrap justify-center gap-4">
             <a
