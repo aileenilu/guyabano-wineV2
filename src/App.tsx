@@ -456,6 +456,7 @@ export default function App() {
       </section>
 
       {/* BENEFITS SECTION */}
+     {/* remove
       <section id="benefits" className="bg-forest-900 py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center space-y-4 mb-14">
@@ -487,7 +488,8 @@ export default function App() {
           </div>
         </div>
       </section>
-
+remove */}
+      
       {/* SECOND PRODUCT IMAGE */}
       <section className="bg-gradient-to-b from-forest-900 to-forest-950 py-20">
         <div className="max-w-6xl mx-auto px-4">
