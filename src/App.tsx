@@ -884,7 +884,7 @@ remove */}
                   </>
                 ) : (
                   <>
-                    Isumite ang Order — ₱{selectedPkg.price.toLocaleString("en-PH")} + SF 
+                    Isumite ang Order — ₱{selectedPkg.total.toLocaleString("en-PH")} 
                     <ArrowRight className="w-5 h-5" />
                   </>
                 )}
