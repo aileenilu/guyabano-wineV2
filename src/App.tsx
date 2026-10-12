@@ -914,7 +914,7 @@ remove */}
              <span className="text-gold-gradient">Frequently Asked Questions</span>
           </h3>
           <p className="text-forest-200">
-            Huwag mag-alinlangan na makipag-ugnayan sa amin
+            1. Paano ang pag-inom ng Nature's Finest Guyabano Wine?
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
