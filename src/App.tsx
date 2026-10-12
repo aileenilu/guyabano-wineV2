@@ -616,7 +616,7 @@ export default function App() {
           <div className="relative overflow-hidden shadow-2xl">
             <video
               ref={videoRef}
-              className="w-50 h-50 object-cover"
+              className="w-50 h-50 object-cover justify-center"
               controls
               playsInline
        //       poster="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE2.png"
