@@ -612,8 +612,8 @@ export default function App() {
             </div>     
       </section>
 
-        <div className="max-w-full mx-auto text-center space-y-6">
-          <div className="relative overflow-hidden shadow-2xl">
+        <div >
+          <div >
             <video
               ref={videoRef}
               className="w-full h-screen object-cover"
