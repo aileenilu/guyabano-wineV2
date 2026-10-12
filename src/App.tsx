@@ -130,7 +130,8 @@ const packages = [
     sf: 99,
     total: 1849,
     disc: null,
-    image: "/pack1.jpg"
+    image: "/pack1.jpg",
+    label: "1",
     highlight: false,
   },
   {
@@ -143,7 +144,8 @@ const packages = [
     sf: 149,
     total: 3147,
     disc: 551,
-    image: "/pack1.jpg"
+    image: "/pack2.jpg",
+    label: "2"
     highlight: true,
   },
 ];
