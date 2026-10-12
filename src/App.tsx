@@ -896,7 +896,7 @@ remove */}
           
             </div> 
         
-              <div className="absolute inset-0 bg-gold-500/20 rounded-full blur-3xl scale-75" />
+              <div  />
               <img
                 src="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE.jpg"
                 alt="Nature's Finest Guyabano Wine"
