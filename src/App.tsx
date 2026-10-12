@@ -468,7 +468,14 @@ export default function App() {
           </div>
         </div>
       </section>
-
+<div className="w-full flex justify-center items-center py-4">
+   <button
+                onClick={scrollToOrder} 
+                className="btn-pulse animate-glow bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-8 py-4 rounded-full text-lg transition-all duration-200 hover:scale-105 flex items-center gap-2 shadow-xl animate-pulse"
+              >
+                YES! I WANT TO ORDER NOW <ArrowRight className="w-5 h-5" />
+              </button>
+</div>     
       {/* BENEFITS SECTION */}
      {/* remove
       <section id="benefits" className="bg-forest-900 py-20">
