@@ -923,6 +923,12 @@ remove */}
             Drink 60ml before bedtime
           </span>
           </p>      <br></br>   <br></br>
+           <p className="text-forest-200">
+            1. Paano ang pag-inom ng Nature's Finest Guyabano Wine? <br></br>
+            <span className="text-gold-200">
+            Drink 60ml before bedtime
+          </span>
+          </p>
             </div> 
             </div>
             </div>
