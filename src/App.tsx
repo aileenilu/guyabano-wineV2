@@ -477,7 +477,7 @@ export default function App() {
 </div>            
       </section>
 
-      
+      {/* BENEFITS SECTION */}
      {/* remove
       <section id="benefits" className="bg-forest-900 py-20">
         <div className="max-w-6xl mx-auto px-4">
