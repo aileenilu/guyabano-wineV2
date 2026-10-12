@@ -760,7 +760,12 @@ remove */}
     />
   </div>
 
-</div>
+  <div className="w-full">
+    <div className="font-bold text-white text-base leading-tight min-h-[44px] flex items-center">
+      {pkg.title}
+    </div>
+    
+  </div>
 
   {selectedPackage === pkg.id && (
     <CheckCircle2 className="absolute top-3 right-3 w-5 h-5 text-gold-400 z-10 bg-forest-950 rounded-full" />
