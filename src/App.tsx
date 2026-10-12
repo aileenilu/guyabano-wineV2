@@ -786,7 +786,7 @@ export default function App() {
                 {submitting ? (
                   <>
                     <Loader2 className="w-5 h-5 animate-spin" />
-                    Pinopreno ang Order...
+                    Pinoproseso ang Order...
                   </>
                 ) : (
                   <>
