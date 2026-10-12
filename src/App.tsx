@@ -912,8 +912,7 @@ remove */}
 <div className="max-w-2xl mx-auto px-4">
           <div className="text-center space-y-4 mb-10">
             <div className="inline-flex items-center gap-2 bg-gold-500/20 border border-gold-500/30 rounded-full px-4 py-1.5 text-gold-300 text-sm">
-              <Phone className="w-4 h-4" />
-              Mag-Order Na
+              
             </div
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-white">
               Piliin Ang Iyong              
