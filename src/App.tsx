@@ -621,7 +621,8 @@ export default function App() {
                 loob ng <strong className="text-gold-300">24 na oras</strong> para sa kumpirmasyon ng
                 inyong order at delivery details.
               </p>
-              <button
+              {/* Order Again remove
+             <button
                 onClick={() => {
                   setSubmitted(false);
                   setForm({ full_name: "", phone: "", address: "", package: "2_bottle", notes: "" });
@@ -630,7 +631,7 @@ export default function App() {
                 className="text-gold-400 underline text-sm hover:text-gold-300 transition-colors"
               >
                 Mag-order ulit
-              </button> 
+              </button>  remove */}
             </div>
           ) : (
             <form
