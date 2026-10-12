@@ -930,9 +930,16 @@ remove */}
           </span>
           </p>
           <p className="text-forest-200">
-            2. Pwede bang uminom ng Guyabano Wine kahit walang sakit? <br></br>
+            3. Mga pagkain na dapat iwasan ng mga may bukol, cyst, tumor o cancer: <br></br>
             <span className="text-gold-200">
-            Yes, for prevention para makaiwas ka sa anumang sakit.
+            • Bagoong <br></br>
+• Alamang <br></br>
+• Patis <br></br>
+• Alimango / Alimasag / Talangka (Crabs) <br></br>
+• Pusit (Squid) <br></br>
+• Hipon (Shrimp) <br></br>
+• Itlog na hindi native (Commercial / poultry eggs, maliban sa native) <br></br>
+• Manok (Poultry chicken) <br></br>
           </span>
           </p>
             </div> 
