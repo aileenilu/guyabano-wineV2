@@ -924,7 +924,13 @@ remove */}
           </span>
           </p>  
            <p className="text-forest-200">
-            1. Pwede bang uminom ng Guyabano Wine kahit walang sakit? <br></br>
+            2. Pwede bang uminom ng Guyabano Wine kahit walang sakit? <br></br>
+            <span className="text-gold-200">
+            Yes, for prevention para makaiwas ka sa anumang sakit.
+          </span>
+          </p
+          <p className="text-forest-200">
+            2. 8 malansang pagkain na dapat iwasan ng mga may bukol, cyst, tumor o cancer: <br></br>
             <span className="text-gold-200">
             Yes, for prevention para makaiwas ka sa anumang sakit.
           </span>
