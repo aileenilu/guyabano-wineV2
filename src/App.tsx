@@ -754,7 +754,7 @@ remove */}
         {/* 1. Package Image Block */}
         <div className="w-full aspect-square rounded-lg overflow-hidden bg-forest-950/40 mb-3 relative">
           <img 
-            src={pkg.image || "/placeholder-package.png"} /* Falls back to placeholder if image path missing */
+            src={pkg.image || "/pack1.jpg"} /* Falls back to placeholder if image path missing */
             alt={pkg.label}
             className="w-full h-full object-cover pointer-events-none" /* pointer-events-none stops image dragging */
           />
