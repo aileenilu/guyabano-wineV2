@@ -387,6 +387,9 @@ export default function App() {
           <p className="text-forest-200 text-lg">
             Alamin kung bakit ito ang pinaka-pinagkakatiwalaang wellness drink sa Pilipinas
           </p>
+<p className="text-forest-200 text-lg">
+            "Click to Watch Video"
+          </p>
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-forest-700">
             <video
               ref={videoRef}
