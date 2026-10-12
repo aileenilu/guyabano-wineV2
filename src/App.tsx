@@ -612,7 +612,7 @@ export default function App() {
             </div>     
       </section>
 
-                <div className="max-w-full mx-auto text-center space-y-6">
+         <div className="max-w-4xl mx-auto text-center space-y-6">
           <div className="relative overflow-hidden shadow-2xl">
             <video
               ref={videoRef}
