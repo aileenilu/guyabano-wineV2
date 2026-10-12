@@ -929,9 +929,7 @@ remove */}
             <div className="flex items-center gap-4 bg-forest-900 border border-forest-700 rounded-2xl px-8 py-5">
               <div className="text-4xl font-bold text-gold-400">4.9</div>
               <div>
-             <div className="text-forest-300 text-sm">Batay sa 500+ reviews</div>
-              </div></div>      
-
+                
               
           
           <div className="flex flex-wrap justify-center gap-4">
