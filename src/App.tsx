@@ -138,7 +138,7 @@ const packages = [
     quantity: 2,
     price: 2998,
     perBottle: 1499,
-    tag: "BEST VALUE",
+    tag: "BEST VALUE, SAVED 551",
     sf: 149,
     total: 3147,
     disc: 551,
