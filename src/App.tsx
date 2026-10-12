@@ -728,40 +728,57 @@ remove */}
               onSubmit={handleSubmit}
               className="bg-forest-800/60 border border-forest-700/50 rounded-2xl p-8 space-y-6"
             >
-              {/* Package selection */}
-              <div className="space-y-3">
-                <label className="block text-white font-semibold">Pumili ang Package</label>
-                <div className="grid grid-cols-2 gap-4">
-                  {packages.map((pkg) => (
-                    <button
-                      key={pkg.id}
-                      type="button"
-                      onClick={() => handlePackageSelect(pkg.id)}
-                      className={`relative rounded-xl border-2 p-5 text-left transition-all duration-200 ${
-                        selectedPackage === pkg.id
-                          ? "border-gold-500 bg-gold-500/10"
-                          : "border-forest-600 bg-forest-900/60 hover:border-forest-500"
-                      }`}
-                    >
-                      {pkg.tag && (
-                        <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold-500 text-forest-950 text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
-                          {pkg.tag}
-                        </span>
-                      )}
-                      <div className="font-bold text-white text-lg">{pkg.label}</div>
-                      <div className="text-gold-400 font-bold text-2xl mt-1">
-                        ₱{pkg.price.toLocaleString("en-PH")}
-                      </div>
-                      <div className="text-forest-300 text-xs mt-1">
-                        ₱{pkg.perBottle.toLocaleString("en-PH")} / bote
-                      </div>
-                      {selectedPackage === pkg.id && (
-                        <CheckCircle2 className="absolute top-3 right-3 w-5 h-5 text-gold-400" />
-                      )}
-                    </button>
-                  ))}
-                </div>
-              </div>
+{/* Package selection */}
+<div className="space-y-3">
+  <label className="block text-white font-semibold">Pumili ng Package</label>
+  <div className="grid grid-cols-2 gap-4">
+    {packages.map((pkg) => (
+      <button
+        key={pkg.id}
+        type="button"
+        onClick={() => handlePackageSelect(pkg.id)}
+        {/* Changed layout styles to block/flex to comfortably fit the image stack */}
+        className={`relative overflow-hidden rounded-xl border-2 p-3 text-left transition-all duration-200 flex flex-col justify-between ${
+          selectedPackage === pkg.id
+            ? "border-gold-500 bg-gold-500/10 shadow-lg shadow-gold-500/10"
+            : "border-forest-600 bg-forest-900/60 hover:border-forest-500"
+        }`}
+      >
+        {pkg.tag && (
+          {/* Increased z-index to make sure tag stays cleanly on top of the image layout */}
+          <span className="absolute top-2 left-2 z-10 bg-gold-500 text-forest-950 text-[10px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider">
+            {pkg.tag}
+          </span>
+        )}
+
+        {/* 1. Package Image Block */}
+        <div className="w-full aspect-square rounded-lg overflow-hidden bg-forest-950/40 mb-3 relative">
+          <img 
+            src={pkg.image || "/placeholder-package.png"} /* Falls back to placeholder if image path missing */
+            alt={pkg.label}
+            className="w-full h-full object-cover pointer-events-none" /* pointer-events-none stops image dragging */
+          />
+        </div>
+
+        {/* 2. Retained Package Details Info */}
+        <div className="w-full mt-auto">
+          <div className="font-bold text-white text-base leading-tight line-clamp-2">{pkg.label}</div>
+          <div className="text-gold-400 font-bold text-xl mt-1">
+            ₱{pkg.price.toLocaleString("en-PH")}
+          </div>
+          <div className="text-forest-300 text-xs mt-0.5">
+            ₱{pkg.perBottle.toLocaleString("en-PH")} / bote
+          </div>
+        </div>
+
+        {/* Selected Check Icon */}
+        {selectedPackage === pkg.id && (
+          <CheckCircle2 className="absolute top-2 right-2 w-5 h-5 text-gold-400 z-10 bg-forest-950 rounded-full" />
+        )}
+      </button>
+    ))}
+  </div>
+</div>
 
              {/* Total price display */}
 <div className="bg-forest-950/50 border border-gold-500/30 rounded-xl px-5 py-4 space-y-2">
