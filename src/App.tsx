@@ -595,7 +595,7 @@ remove */}
           <div   id="w-cgf2ijgc" class="com-button p-absolute is-animation" >
             <div class="button-css full-height full-width lazy">
               <span class="button-loader"></span>
-              <div class="button-text full-width u-select-none">YES! I WANT TO ORDER NOW!</div></div></div></div></div>
+              <div class="button-text full-width u-select-none">YES! I WANT TO ORDER NOW!</div></div></div></div>
           
         <div>
               <img
