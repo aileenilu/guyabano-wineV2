@@ -467,7 +467,6 @@ export default function App() {
             </div>
           </div>
         </div>
-      </section>
 <div className="w-full flex justify-center items-center py-4">
    <button
                 onClick={scrollToOrder} 
@@ -475,7 +474,9 @@ export default function App() {
               >
                 YES! I WANT TO ORDER NOW <ArrowRight className="w-5 h-5" />
               </button>
-</div>     
+</div>            
+      </section>
+
       {/* BENEFITS SECTION */}
      {/* remove
       <section id="benefits" className="bg-forest-900 py-20">
