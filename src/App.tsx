@@ -776,7 +776,7 @@ remove */}
   </div>
   <div className="border-t border-gold-500/20 pt-2 flex items-center justify-between">
     <span className="text-forest-200 font-medium">Total Amount:</span>
-    <span className="text-gold-400 font-bold text-2xl">₱{selectedPkg.price.toLocaleString("en-PH")} + {selectedPkg.sf.toLocaleString("en-PH")}</span>
+    <span className="text-gold-400 font-bold text-2xl">₱{selectedPkg.total.toLocaleString("en-PH")}</span>
   </div>
 </div>
 
