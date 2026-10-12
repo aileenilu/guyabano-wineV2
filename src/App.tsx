@@ -909,6 +909,14 @@ remove */}
 
       {/* CONTACT SECTION */}
       <section className="bg-forest-950 py-12 border-t border-forest-800">
+<div className="bg-forest-800 border border-green-500/40 rounded-2xl p-10 text-center space-y-5">
+              <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto">
+          <h3 className="font-serif text-3xl font-bold text-white">
+             <span className="text-gold-gradient">Frequently Asked Questions</span>
+          </h3>      
+              </div></div>
+        
+        
         <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
           <h3 className="font-serif text-3xl font-bold text-white">
              <span className="text-gold-gradient">Frequently Asked Questions</span>
