@@ -923,7 +923,7 @@ remove */}
         </div>
           
           <div class="text-block">
-            <h5 class="text-block-css full-width">2. Paano ang pag-inom ng Guyabano Wine?<br>
+            <h5 class="text-block-css full-width">2. Paano ang pag-inom ng Guyabano Wine?
           </h5></div>
           <div  class="com-text-block p-absolute" >
             <div class="text-block"><p class="text-block-css full-width">Direction: Drink 60ml Before Bed Time.<br></p>
