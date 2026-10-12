@@ -922,6 +922,12 @@ remove */}
             <span className="text-gold-200">
             Drink 60ml before bedtime
           </span>
+          </p>      <br></br>   <br></br
+           <p className="text-forest-200">
+            2. Pwede bang uminom ng Guyabano Wine kahit walang sakit? <br></br>
+            <span className="text-gold-200">
+            Drink 60ml before bedtime
+          </span>
           </p>      <br></br>   <br></br>
             </div> 
             </div>
