@@ -574,7 +574,7 @@ export default function App() {
             )}
           </div>
         </div>
-
+   <div> <p> <br></br> <br></br>   </p> </div>
             <div>
               <img
                 src="/testimony2.jpg"
@@ -584,8 +584,6 @@ export default function App() {
             </div>
         <div> <p> <br></br> <br></br>   </p> </div>
 
-          
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <div
