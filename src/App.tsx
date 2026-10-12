@@ -432,7 +432,8 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/w1.jpg"
+                src="/701507958_1023553253431513_1977904653140737869_n.jpg"
+              //  src="/w1.jpg"
                 alt="Guyabano Wine - Nature's Finest"
                 className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
               />
@@ -548,7 +549,8 @@ remove */}
             </div>
             <div>
               <img
-                src="/701507958_1023553253431513_1977904653140737869_n.jpg"
+                src="/w1.jpg"
+               // src="/701507958_1023553253431513_1977904653140737869_n.jpg"
                 alt="Guyabano Wine Bottles"
                 className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
               />
