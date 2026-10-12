@@ -737,7 +737,7 @@ remove */}
 <div className="bg-forest-950/50 border border-gold-500/30 rounded-xl px-5 py-4 space-y-2">
   <div className="flex items-center justify-between">
     <span className="text-forest-200 font-medium">Subtotal:</span>
-    <span className="text-white font-semibold">₱{selectedPkg.label.toLocaleString("en-PH")}</span>
+    <span className="text-white font-semibold">₱{selectedPkg.label.toLocaleString()}</span>
   </div>
   <div className="flex items-center justify-between">
     <span className="text-forest-200 font-medium">Subtotal:</span>
