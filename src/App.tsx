@@ -388,7 +388,7 @@ export default function App() {
             Alamin kung bakit ito ang pinaka-pinagkakatiwalaang wellness drink sa Pilipinas
           </p>
 <p className="text-forest-200 text-lg">
-            "Click to Watch Video"<span className="text-gold-gradient">Rekomendasyon ni Doc Atoie</span> 
+            <span className="text-gold-gradient">"Click to Watch Video"</span> 
           </p>
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-forest-700">
             <video
