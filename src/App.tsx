@@ -560,13 +560,6 @@ export default function App() {
         <div> <p> <br></br> <br></br>   </p> </div>
 
         <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white">
-            Panoorin: Ang{" "}
-            <span className="text-gold-gradient">Rekomendasyon ni Doc Atoie</span> 
-          </h2>
-          <p className="text-forest-200 text-lg">
-            Alamin kung bakit ito ang pinaka-pinagkakatiwalaang wellness drink sa Pilipinas
-          </p>
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-forest-700">
             <video
               ref={videoRef}
