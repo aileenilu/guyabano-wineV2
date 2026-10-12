@@ -609,9 +609,10 @@ export default function App() {
                 alt="Testimonials"
                 className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
               />
-            </div>
+            </div>     
+      </section>
 
-                <div className="max-w-full mx-auto text-center space-y-6">
+        <div className="max-w-full mx-auto text-center space-y-6">
           <div className="relative overflow-hidden shadow-2xl">
             <video
               ref={videoRef}
@@ -637,8 +638,7 @@ export default function App() {
           </div>
         </div>
 
-      </section>
-
+      
       {/* ORDER SECTION */}
       <section ref={orderRef} className="bg-gradient-to-b from-forest-950 to-forest-900 py-20">
         <div className="max-w-2xl mx-auto px-4">
