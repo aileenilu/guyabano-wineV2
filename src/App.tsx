@@ -145,7 +145,7 @@ const packages = [
     total: 3147,
     disc: 551,
     image: "/pack2.jpg",
-    label: "2"
+    label: "2",
     highlight: true,
   },
 ];
