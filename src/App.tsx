@@ -730,56 +730,53 @@ remove */}
               onSubmit={handleSubmit}
               className="bg-forest-800/60 border border-forest-700/50 rounded-2xl p-8 space-y-6"
             >
+              
 {/* Package selection */}
 <div className="space-y-3">
   <label className="block text-white font-semibold">Pumili ang Package</label>
   <div className="grid grid-cols-2 gap-4">
     {packages.map((pkg) => (
       <button
-        key={pkg.id}
-        type="button"
-        onClick={() => handlePackageSelect(pkg.id)}
-        {/* Adjusted padding from p-5 to p-4 to provide a well-balanced card with the image included */}
-        className={`relative rounded-xl border-2 p-4 text-left transition-all duration-200 flex flex-col justify-between ${
-          selectedPackage === pkg.id
-            ? "border-gold-500 bg-gold-500/10"
-            : "border-forest-600 bg-forest-900/60 hover:border-forest-500"
-        }`}
-      >
-        {pkg.tag && (
-          {/* Kept top position exact to your image mock layout while adding z-10 layer safety */}
-          <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold-500 text-forest-950 text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap z-10">
-            {pkg.tag}
-          </span>
-        )}
+  key={pkg.id}
+  type="button"
+  onClick={() => handlePackageSelect(pkg.id)}
+  className={`relative rounded-xl border-2 p-4 text-left transition-all duration-200 flex flex-col justify-between ${
+    selectedPackage === pkg.id
+      ? "border-gold-500 bg-gold-500/10"
+      : "border-forest-600 bg-forest-900/60 hover:border-forest-500"
+  }`}
+>
+  {pkg.tag && (
+    <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold-500 text-forest-950 text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap z-10">
+      {pkg.tag}
+    </span>
+  )}
 
-        {/* 1. Added Product Image Container Wrapper */}
-        <div className="w-full aspect-[4/3] mb-3 rounded-lg overflow-hidden bg-forest-950/30 flex items-center justify-center relative">
-          <img 
-            src={pkg.image || "/placeholder-package.png"} /* Point your data objects to 'pkg.image' property */
-            alt={pkg.label}
-            className="max-w-full max-h-full object-contain pointer-events-none select-none" /* Prevents user drag-saving copy */
-          />
-        </div>
+  <div className="w-full aspect-[4/3] mb-3 rounded-lg overflow-hidden bg-forest-950/30 flex items-center justify-center relative">
+    <img 
+      src={pkg.image || "/placeholder-package.png"} 
+      alt={pkg.title}
+      className="max-w-full max-h-full object-contain pointer-events-none select-none" 
+    />
+  </div>
 
-        {/* 2. Package Text Details (Unchanged Logic) */}
-        <div className="w-full">
-          <div className="font-bold text-white text-base leading-tight min-h-[44px] flex items-center">
-            {pkg.label}
-          </div>
-          <div className="text-gold-400 font-bold text-2xl mt-1">
-            ₱{pkg.price.toLocaleString("en-PH")}
-          </div>
-          <div className="text-forest-300 text-xs mt-1">
-            ₱{pkg.perBottle.toLocaleString("en-PH")} / bote
-          </div>
-        </div>
+  <div className="w-full">
+    <div className="font-bold text-white text-base leading-tight min-h-[44px] flex items-center">
+      {pkg.title}
+    </div>
+    <div className="text-gold-400 font-bold text-2xl mt-1">
+      ₱{pkg.price.toLocaleString("en-PH")}
+    </div>
+    <div className="text-forest-300 text-xs mt-1">
+      ₱{pkg.perBottle.toLocaleString("en-PH")} / bote
+    </div>
+  </div>
 
-        {/* Selected Check Icon Indicator Layer */}
-        {selectedPackage === pkg.id && (
-          <CheckCircle2 className="absolute top-3 right-3 w-5 h-5 text-gold-400 z-10 bg-forest-950 rounded-full" />
-        )}
-      </button>
+  {selectedPackage === pkg.id && (
+    <CheckCircle2 className="absolute top-3 right-3 w-5 h-5 text-gold-400 z-10 bg-forest-950 rounded-full" />
+  )}
+</button>
+
     ))}
   </div>
 </div>
