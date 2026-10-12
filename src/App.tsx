@@ -74,7 +74,7 @@ const testimonials = [
 const packages = [
   {
     id: "1_bottle",
-    label: "1 Bottle + 99 Shipping Fee",
+    label: "Order: 1 Bottle",
     quantity: 1,
     price: 1550,
     perBottle: 1550,
@@ -87,7 +87,7 @@ const packages = [
   },
   {
     id: "2_bottle",
-    label: "2 Bottles + 149 Shipping Fee",
+    label: "Order: 2 Bottles",
     quantity: 2,
     price: 2998,
     perBottle: 1499,
@@ -973,7 +973,7 @@ remove */}
           onClick={scrollToOrder}
           className="btn-pulse animate-glow bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-8 py-3.5 rounded-full shadow-2xl text-base flex items-center gap-2"
         >
-          Order Ngayon — ₱{selectedPkg.price.toLocaleString("en-PH")}
+          Order Now — {/*₱{selectedPkg.price.toLocaleString("en-PH")} */}
           <ArrowRight className="w-4 h-4" />
         </button>
       </div>
