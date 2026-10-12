@@ -616,7 +616,7 @@ export default function App() {
           <div >
             <video
          //     ref={videoRef}
-         //     className="w-full h-screen object-cover"
+              className="w-full h-screen object-cover"
               controls
               playsInline
        //       poster="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE2.png"
