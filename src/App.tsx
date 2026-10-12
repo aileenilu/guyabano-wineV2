@@ -908,29 +908,7 @@ remove */}
       </section>
 
 
-<section ref={orderRef} className="bg-gradient-to-b from-forest-950 to-forest-900 py-20">
-        <div className="max-w-2xl mx-auto px-4">
-          <div className="text-center space-y-4 mb-10">
-            <div className="inline-flex items-center gap-2 bg-gold-500/20 border border-gold-500/30 rounded-full px-4 py-1.5 text-gold-300 text-sm">
-              <Phone className="w-4 h-4" />
-              Mag-Order Na
-            </div>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-white">
-              Piliin Ang Iyong
-              <br />
-              <span className="text-gold-gradient">Package</span>
-            </h2>
-            <p className="text-forest-200 text-lg">
-              Punan ang form sa ibaba at makikipag-ugnayan kami sa inyo
-            </p>
-          </div>
-        </div>
-  <div className="bg-forest-800 border border-green-500/40 rounded-2xl p-10 text-center space-y-5">
-              <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto">
-              </div></div>
-  <div className="space-y-3"></div>
-</section>
-      
+
       {/* CONTACT SECTION */}
       <section className="bg-forest-950 py-12 border-t border-forest-800">
         <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
