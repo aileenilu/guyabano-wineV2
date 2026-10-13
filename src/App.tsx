@@ -305,7 +305,7 @@ export default function App() {
               (Annona muricata) — mayaman sa acetogenins, antioxidants, at natural probiotics.             
             </p>
 
-<p className="text-forest-100 text-base leading-relaxed max-w-lg text-justify w-full">
+<p className="text-forest-100 text-base leading-relaxed text-justify w-full">
    <strong className="text-gold-300">Nature’s Finest Guyabano Wine</strong>{" "}
               {" "} supports gut health, boosts immunity, at helps detox ang body. Crafted sa pamamagitan ng natural fermentation para ma-enhance ang absorption at ma-preserve ang nutrients, ito ay isang refreshing at functional daily tonic—walang artificial additives, pure fermented wellness lang sa bawat inom.{" "}
              
