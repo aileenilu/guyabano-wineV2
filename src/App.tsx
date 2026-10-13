@@ -1002,7 +1002,7 @@ remove */}
           onClick={scrollToOrder}
           className="btn-pulse animate-glow bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-8 py-3.5 rounded-full shadow-2xl text-base flex items-center gap-2"
         >
-          Order Now — {/*₱{selectedPkg.price.toLocaleString("en-PH")} */}
+          Order Now {/*₱{selectedPkg.price.toLocaleString("en-PH")} */}
           <ArrowRight className="w-4 h-4" />
         </button>
       </div>
