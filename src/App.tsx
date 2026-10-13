@@ -425,6 +425,12 @@ export default function App() {
             >
               <source src="/winevid.mp4" type="video/mp4" />
             </video>
+            {/* FLOATING WATERMARK OVERLAY */}
+  <div className="absolute inset-0 pointer-events-none flex flex-wrap items-center justify-center gap-16 overflow-hidden opacity-10 select-none">
+    <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-30deg]">GUYABANO WINE PH</span>
+    <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-30deg]">GUYABANO WINE PH</span>
+    <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-30deg]">GUYABANO WINE PH</span>
+  </div>
             {!videoPlaying && (
               <button
                 className="absolute inset-0 flex items-center justify-center bg-black/30 group"
