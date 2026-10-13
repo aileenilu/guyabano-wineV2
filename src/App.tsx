@@ -170,7 +170,7 @@ export default function App() {
     }
   }, [submitted, form, selectedPackage]);
 
-import { useEffect } from "react";
+//import { useEffect } from "react";
 
 export default function MediaProtection() {
   useEffect(() => {
