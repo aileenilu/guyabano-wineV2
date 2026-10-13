@@ -510,50 +510,6 @@ export default function App() {
       </section>
 remove */}
       
-      {/* SECOND PRODUCT IMAGE */}
-      <section className="bg-gradient-to-b from-forest-900 to-forest-950 py-20">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 text-white">
-              <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight">
-                <span className="text-gold-gradient">Guyabano</span> Fruit
-                <br />Goodness in Every Sip
-              </h2>
-              <p className="text-forest-200 text-base leading-relaxed">
-                Made from guyabano fruit known for its naturally occurring plant compounds.
-                Enjoy <strong className="text-gold-300">responsibly</strong> and in moderation
-                as part of a balanced lifestyle.
-              </p>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { icon: Leaf, label: "100% Natural" },
-                  { icon: Droplets, label: "Wellness Drink" },
-                  { icon: ShieldCheck, label: "Walang Preservatives" },
-                  { icon: Heart, label: "Pang-araw-araw" },
-                ].map(({ icon: Icon, label }) => (
-                  <div key={label} className="flex items-center gap-3 bg-forest-800/40 border border-forest-700/40 rounded-xl p-3">
-                    <Icon className="w-5 h-5 text-gold-400 shrink-0" />
-                    <span className="text-forest-100 text-sm font-medium">{label}</span>
-                  </div>
-                ))}
-              </div>
-              <button
-                onClick={scrollToOrder}
-                className="btn-pulse animate-glow bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-6 py-2.5 rounded-full text-base transition-all duration-200 hover:scale-105 flex items-center gap-2 shadow-xl"
-              >
-                Mag-Order Na <ArrowRight className="w-5 h-5" />
-              </button>
-            </div>
-            <div>
-              <img
-                src="/w1.jpg"
-                alt="Guyabano Wine Bottles"
-                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* TESTIMONIALS */}
       <section className="bg-forest-950 py-20">
@@ -899,8 +855,52 @@ remove */}
         </div>
       </section>
 
-      
-      {/* CONTACT SECTION */}
+       {/* SECOND PRODUCT IMAGE */}
+      <section className="bg-gradient-to-b from-forest-900 to-forest-950 py-20">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 text-white">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight">
+                <span className="text-gold-gradient">Guyabano</span> Fruit
+                <br />Goodness in Every Sip
+              </h2>
+              <p className="text-forest-200 text-base leading-relaxed">
+                Made from guyabano fruit known for its naturally occurring plant compounds.
+                Enjoy <strong className="text-gold-300">responsibly</strong> and in moderation
+                as part of a balanced lifestyle.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { icon: Leaf, label: "100% Natural" },
+                  { icon: Droplets, label: "Wellness Drink" },
+                  { icon: ShieldCheck, label: "Walang Preservatives" },
+                  { icon: Heart, label: "Pang-araw-araw" },
+                ].map(({ icon: Icon, label }) => (
+                  <div key={label} className="flex items-center gap-3 bg-forest-800/40 border border-forest-700/40 rounded-xl p-3">
+                    <Icon className="w-5 h-5 text-gold-400 shrink-0" />
+                    <span className="text-forest-100 text-sm font-medium">{label}</span>
+                  </div>
+                ))}
+              </div>
+              <button
+                onClick={scrollToOrder}
+                className="btn-pulse animate-glow bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-6 py-2.5 rounded-full text-base transition-all duration-200 hover:scale-105 flex items-center gap-2 shadow-xl"
+              >
+                Mag-Order Na <ArrowRight className="w-5 h-5" />
+              </button>
+            </div>
+            <div>
+              <img
+                src="/w1.jpg"
+                alt="Guyabano Wine Bottles"
+                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      {/* FAQ */}
       <section className="bg-forest-950 py-12 border-t border-forest-800">
         <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
            <div className="mt-10 flex justify-center">
