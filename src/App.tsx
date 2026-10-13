@@ -440,7 +440,7 @@ export default function App() {
                 <Award className="w-4 h-4" />
                 Certified Naturopathy Endorsed
               </div>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold leading-tight">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight">
                 Ang <span className="text-gold-gradient">Pinaka-Natural</span>
                 <br />na Wellness Drink
               </h2>
