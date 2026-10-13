@@ -292,13 +292,14 @@ export default function App() {
       
             </h1>
 
-<div classname="flex items-center justify-center">
+      <div className="w-full max-w-2xl mx-auto space-y-4">
+        <div className="w-full rounded-2xl overflow-hidden shadow-2xl">
              <img
                 src="/legit.jpg"
                 alt="Nature's Finest Guyabano Wine"
-                className="w-lg max-w-2xl mx-auto rounded-2xl shadow-2xl object-cover" />  </div>
+                className="w-full h-auto object-cover block"/>  </div>
             
-            <p className="text-forest-100 text-base leading-relaxed max-w-lg text-justify">
+             <p className="text-forest-100 text-base leading-relaxed text-justify w-full">
               Tikman ang likas na sarap at benepisyo! Gawa mula sa{" "}
               <strong className="text-gold-300">100% natural na pagbuburo ng Guyabano</strong>{" "}
               (Annona muricata) — mayaman sa acetogenins, antioxidants, at natural probiotics.             
@@ -309,7 +310,7 @@ export default function App() {
               {" "} supports gut health, boosts immunity, at helps detox ang body. Crafted sa pamamagitan ng natural fermentation para ma-enhance ang absorption at ma-preserve ang nutrients, ito ay isang refreshing at functional daily tonic—walang artificial additives, pure fermented wellness lang sa bawat inom.{" "}
              
                      
-            </p>
+            </p> </div>
             <div className="flex flex-wrap gap-3">
               {["100% Natural", "Walang Preservatives", "Wellness Drink"].map((tag) => (
                 <span
