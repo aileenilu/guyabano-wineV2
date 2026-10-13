@@ -597,11 +597,11 @@ remove */}
 </div>     
 
             <div> <p> <br /> <br />   </p> </div>
-        <div>
+        <div className="relative mx-auto w-fit overflow-hidden rounded-2xl shadow-2xl">
               <img
                 src="/testimony2.Jpg"
                 alt="Testimonials"
-                className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl object-cover"
+                className="w-full max-w-2xl h-auto block pointer-events-none select-none"
               />
           {/* 3. The FLOATING WATERMARK OVERLAY mapped onto the image frame layout */}
   <div className="absolute inset-0 pointer-events-none flex flex-wrap items-center justify-center gap-16 overflow-hidden opacity-10 select-none z-10">
