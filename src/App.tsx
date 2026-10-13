@@ -292,6 +292,12 @@ export default function App() {
       
             </h1>
 
+<div classname="flex items-center justify-center">
+             <img
+                src="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE2.png"
+                alt="Nature's Finest Guyabano Wine"
+                className="relative w-full max-w-sm lg:max-w-md object-contain drop-shadow-2xl" />  </div>
+            
             <p className="text-forest-100 text-base leading-relaxed max-w-lg text-justify">
               Tikman ang likas na sarap at benepisyo! Gawa mula sa{" "}
               <strong className="text-gold-300">100% natural na pagbuburo ng Guyabano</strong>{" "}
