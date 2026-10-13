@@ -603,6 +603,12 @@ remove */}
                 alt="Testimonials"
                 className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl object-cover"
               />
+           {/* FLOATING WATERMARK OVERLAY */}
+  <div className="absolute inset-0 pointer-events-none flex flex-wrap items-center justify-center gap-16 overflow-hidden opacity-10 select-none">
+    <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-30deg]">ZYNERGIA GABAY KALUSUGAN</span>
+    <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-30deg]">ZYNERGIA GABAY KALUSUGAN</span>
+    <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-30deg]">ZYNERGIA GABAY KALUSUGAN</span>
+  </div>
             </div>
         <div> <p> <br /> <br />   </p> </div>
 
