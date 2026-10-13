@@ -515,7 +515,7 @@ remove */}
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-white">
-              <h2 className="font-serif text-4xl md:text-5xl font-bold leading-tight">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight">
                 <span className="text-gold-gradient">Guyabano</span> Fruit
                 <br />Goodness in Every Sip
               </h2>
