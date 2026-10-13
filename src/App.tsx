@@ -394,6 +394,8 @@ export default function App() {
               ref={videoRef}
               className="w-full aspect-video object-cover"
               controls
+              controlsList="nodownload nofullscreen" 
+              onContextMenu={(e) => e.preventDefault()} 
               playsInline
               poster="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE2.png"
               onPlay={() => setVideoPlaying(true)}
@@ -537,6 +539,8 @@ remove */}
               ref={videoRef2}
               className="w-full max-w-4xl h-auto block"
               controls
+              controlsList="nodownload nofullscreen" 
+              onContextMenu={(e) => e.preventDefault()} 
               playsInline
               poster="/testimony3.jpg"
               onPlay={() => setVideoPlaying(true)}
