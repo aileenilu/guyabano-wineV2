@@ -319,14 +319,14 @@ export default function App() {
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <button
                 onClick={scrollToOrder}
-                className="btn-pulse animate-glow group relative bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-8 py-4 rounded-full text-lg transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2 shadow-xl"
+                className="btn-pulse animate-glow group relative bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-8 py-4 rounded-full text-base transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2 shadow-xl"
               >
                 Order Ngayon
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               <a
                 href="#benefits"
-                className="btn-pulse border-2 border-white/40 hover:border-gold-400 text-white hover:text-gold-300 font-semibold px-8 py-4 rounded-full text-lg transition-all duration-200 flex items-center justify-center gap-2"
+                className="btn-pulse border-2 border-white/40 hover:border-gold-400 text-white hover:text-gold-300 font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 flex items-center justify-center gap-2"
               >
                 Alamin Ang Benepisyo
                 <ChevronDown className="w-5 h-5" />
