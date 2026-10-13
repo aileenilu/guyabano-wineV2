@@ -599,7 +599,7 @@ remove */}
             <div> <p> <br /> <br />   </p> </div>
        <div className="relative mx-auto w-fit overflow-hidden rounded-2xl shadow-2xl">
   <img
-    src="/testimony2.jpg"
+    src="/testimony2.jpg" 
     alt="Testimonials"
     className="w-full max-w-2xl h-auto block pointer-events-none select-none"
   />
