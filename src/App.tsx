@@ -316,7 +316,7 @@ export default function App() {
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row gap-4 pt-2 w-fit">
               <button
                 onClick={scrollToOrder}
                 className="btn-pulse animate-glow group relative bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-4 py-2.5 rounded-full text-base transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2 shadow-xl"
