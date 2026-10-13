@@ -170,6 +170,42 @@ export default function App() {
     }
   }, [submitted, form, selectedPackage]);
 
+import { useEffect } from "react";
+
+export default function MediaProtection() {
+  useEffect(() => {
+    // 1. Blocks right-click context menu (Save image as...)
+    const handleContextMenu = (e) => e.preventDefault();
+    
+    // 2. Blocks dragging images or video tags off the screen onto the desktop
+    const handleDragStart = (e) => e.preventDefault();
+
+    // 3. Blocks standard keyboard shortcuts used for saving/printing (Ctrl+S, Ctrl+P)
+    const handleKeyDown = (e) => {
+      if (
+        (e.ctrlKey && e.key === "s") || 
+        (e.metaKey && e.key === "s") || 
+        (e.ctrlKey && e.key === "p") || 
+        (e.metaKey && e.key === "p")
+      ) {
+        e.preventDefault();
+        alert("Bawal i-copy o i-save ang media dito.");
+      }
+    };
+
+    document.addEventListener("contextmenu", handleContextMenu);
+    document.addEventListener("dragstart", handleDragStart);
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("dragstart", handleDragStart);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
+  return null; // This component handles background security logic
+}
   
   const scrollToOrder = () => {
     orderRef.current?.scrollIntoView({ behavior: "smooth" });
