@@ -597,18 +597,23 @@ remove */}
 </div>     
 
             <div> <p> <br /> <br />   </p> </div>
-        <div className="relative mx-auto w-fit overflow-hidden rounded-2xl shadow-2xl">
-              <img
-                src="/testimony2.jpg"
-                alt="Testimonials"
-                className="w-full max-w-2xl h-auto block pointer-events-none select-none"
-              />
-          {/* 3. The FLOATING WATERMARK OVERLAY mapped onto the image frame layout */}
-  <div className="absolute inset-0 pointer-events-none flex flex-wrap items-center justify-center gap-16 overflow-hidden opacity-10 select-none z-10">
-    <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-30deg]">ZYNERGIA GABAY KALUSUGAN</span>
-    <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-30deg]">ZYNERGIA GABAY KALUSUGAN</span>
-    <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-30deg]">ZYNERGIA GABAY KALUSUGAN</span>
+       <div className="relative mx-auto w-fit overflow-hidden rounded-2xl shadow-2xl">
+  <img
+    src="/testimony2.jpg"
+    alt="Testimonials"
+    className="w-full max-w-2xl h-auto block pointer-events-none select-none"
+  />
+  {/* The FLOATING WATERMARK OVERLAY mapped onto the image frame layout */}
+  {/* Changed opacity-10 to opacity-15 for better contrast balances */}
+  <div className="absolute inset-0 pointer-events-none flex flex-wrap items-center justify-center gap-x-16 gap-y-24 overflow-hidden opacity-15 select-none z-10">
+    {/* Changed text-white to text-forest-950 so it cuts clearly through the white/gold graphics */}
+    <span className="text-forest-950 text-xl font-bold tracking-widest uppercase rotate-[-30deg]">ZYNERGIA GABAY KALUSUGAN</span>
+    <span className="text-forest-950 text-xl font-bold tracking-widest uppercase rotate-[-30deg]">ZYNERGIA GABAY KALUSUGAN</span>
+    <span className="text-forest-950 text-xl font-bold tracking-widest uppercase rotate-[-30deg]">ZYNERGIA GABAY KALUSUGAN</span>
+    <span className="text-forest-950 text-xl font-bold tracking-widest uppercase rotate-[-30deg]">ZYNERGIA GABAY KALUSUGAN</span>
   </div>
+</div>
+
             </div>
         <div> <p> <br /> <br />   </p> </div>
 
