@@ -319,7 +319,7 @@ export default function App() {
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <button
                 onClick={scrollToOrder}
-                className="btn-pulse animate-glow group relative bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-4 py-2.5 rounded-full text-base transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2 shadow-xl"
+                className="btn-pulse animate-glow group relative bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-4 py-2.5 rounded-full text-sm transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2 shadow-xl"
               >
                 Order Ngayon
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
