@@ -296,7 +296,7 @@ export default function App() {
              <img
                 src="/legit.jpg"
                 alt="Nature's Finest Guyabano Wine"
-                className="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl object-cover />  </div>
+                className="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl object-cover" />  </div>
             
             <p className="text-forest-100 text-base leading-relaxed max-w-lg text-justify">
               Tikman ang likas na sarap at benepisyo! Gawa mula sa{" "}
