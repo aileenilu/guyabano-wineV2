@@ -133,25 +133,44 @@ export default function App() {
   const orderRef = useRef<HTMLDivElement>(null);
   const [scrolled, setScrolled] = useState(false);
 
+    // 1. Existing Scroll Effect (Keep unchanged)
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-// Automatically redirects to Messenger when the order is submitted
-useEffect(() => {
-  if (submitted) {
-    const timer = setTimeout(() => {
-      // Replaces current page window with your Messenger URL
-      window.location.href = "https://m.me/ZynergiaSagipKalusugan"; 
-    }, 2500); // 2500ms = 2.5 seconds delay
+  // 2. Updated Messenger Redirect with Prefilled Order Details
+  useEffect(() => {
+    if (submitted) {
+      // Find the package data that matches the selected ID
+      const chosenPkg = packages.find(p => p.id === selectedPackage);
+      const pkgLable = chosenPkg ? chosenPkg.label : "Guyabano Wine Package";
+      const pkgTotal = chosenPkg ? chosenPkg.total : 0;
 
-    return () => clearTimeout(timer); // Clean up the timer if component unmounts
-  }
-}, [submitted]);
+      // Draft a clean, professional summary text
+      const orderMessage = 
+        `🛒 **NEW ORDER DETAILS** 🛒\n\n` +
+        `👤 Pangalan: ${form.full_name}\n` +
+        `📞 Telepono: ${form.phone}\n` +
+        `📍 Address: ${form.address}\n\n` +
+        `📦 Package: ${pkgLable}\n` +
+        `💰 Total Amount: ₱${pkgTotal.toLocaleString("en-PH")}\n\n` +
+        `📝 Notes: ${form.notes || "Walang nakalagay"}\n\n` +
+        `Gusto ko pong i-confirm ang aking order. Maraming Salamat!`;
 
-useEffect(() => {
+      const timer = setTimeout(() => {
+        // Change "YOUR_PAGE_USERNAME" to your exact Facebook Page username handle
+        const pageUsername = "/ZynergiaSagipKalusugan"; 
+        
+        window.location.href = `https://m.me/ZynergiaSagipKalusugan?text=${encodeURIComponent(orderMessage)}`; 
+      }, 3500); // 
+
+      return () => clearTimeout(timer);
+    }
+  }, [submitted, form, selectedPackage]);
+
+  useEffect(() => {
     const handleContextMenu = (e) => e.preventDefault();
     const handleDragStart = (e) => e.preventDefault();
     const handleKeyDown = (e) => {
@@ -290,27 +309,34 @@ useEffect(() => {
               100% Natural • Gawa sa Guyabano Fruit
             </div>
 
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               Nature's Finest
               <br />
               <span className="text-gold-gradient italic">Guyabano</span>
       
             </h1>
 
-            <p className="text-forest-100 text-lg leading-relaxed max-w-lg text-justify">
+      <div className="w-full max-w-2xl mx-auto space-y-4">
+        <div className="w-full rounded-2xl overflow-hidden shadow-2xl">
+             <img
+                src="/legit.jpg"
+                alt="Nature's Finest Guyabano Wine"
+                className="w-full h-auto object-cover block"/>  </div>
+            
+             <p className="text-forest-100 text-base leading-relaxed text-justify w-full">
               Tikman ang likas na sarap at benepisyo! Gawa mula sa{" "}
               <strong className="text-gold-300">100% natural na pagbuburo ng Guyabano</strong>{" "}
               (Annona muricata) — mayaman sa acetogenins, antioxidants, at natural probiotics.             
             </p>
 
-<p className="text-forest-100 text-lg leading-relaxed max-w-lg text-justify">
+<p className="text-forest-100 text-base leading-relaxed text-justify w-full">
    <strong className="text-gold-300">Nature’s Finest Guyabano Wine</strong>{" "}
               {" "} supports gut health, boosts immunity, at helps detox ang body. Crafted sa pamamagitan ng natural fermentation para ma-enhance ang absorption at ma-preserve ang nutrients, ito ay isang refreshing at functional daily tonic—walang artificial additives, pure fermented wellness lang sa bawat inom.{" "}
              
                      
-            </p>
+            </p> </div>
             <div className="flex flex-wrap gap-3">
-              {["100% Natural", "Walang Preservatives", "Wellness Drink"].map((tag) => (
+              {["100% Natural", "Walang Preservatives", "Wellness Drink", "Pang-araw-araw"].map((tag) => (
                 <span
                   key={tag}
                   className="flex items-center gap-1.5 text-forest-100 bg-white/10 border border-white/20 rounded-full px-3 py-1 text-sm"
@@ -321,17 +347,17 @@ useEffect(() => {
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row gap-4 pt-2 w-fit">
               <button
                 onClick={scrollToOrder}
-                className="btn-pulse animate-glow group relative bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-8 py-4 rounded-full text-lg transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2 shadow-xl"
+                className="btn-pulse animate-glow group relative bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-4 py-2.5 rounded-full text-base transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2 shadow-xl"
               >
                 Order Ngayon
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               <a
                 href="#benefits"
-                className="btn-pulse border-2 border-white/40 hover:border-gold-400 text-white hover:text-gold-300 font-semibold px-8 py-4 rounded-full text-lg transition-all duration-200 flex items-center justify-center gap-2"
+                className="btn-pulse border-2 border-white/40 hover:border-gold-400 text-white hover:text-gold-300 font-semibold px-4 py-2.5 rounded-full text-base transition-all duration-200 flex items-center justify-center gap-2"
               >
                 Alamin Ang Benepisyo
                 <ChevronDown className="w-5 h-5" />
@@ -424,7 +450,7 @@ useEffect(() => {
       </section>
 
       {/* PRODUCT SHOWCASE */}
-      <section className="bg-gradient-to-b from-forest-950 to-forest-900 py-20">
+      <section id="benefits" className="bg-gradient-to-b from-forest-950 to-forest-900 py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -439,11 +465,11 @@ useEffect(() => {
                 <Award className="w-4 h-4" />
                 Certified Naturopathy Endorsed
               </div>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold leading-tight">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight">
                 Ang <span className="text-gold-gradient">Pinaka-Natural</span>
                 <br />na Wellness Drink
               </h2>
-              <p className="text-forest-200 text-lg leading-relaxed">
+              <p className="text-forest-200 text-base leading-relaxed">
                 Ang Nature's Finest Guyabano Wine ay gawa mula sa 100% natural na pagbuburo ng Guyabano
                 (<em>Annona muricata</em>). Bawat bote ay puno ng kalikasan — walang halong artificial
                 additives o preservatives.
@@ -509,50 +535,6 @@ useEffect(() => {
       </section>
 remove */}
       
-      {/* SECOND PRODUCT IMAGE */}
-      <section id="benefits" className="bg-gradient-to-b from-forest-900 to-forest-950 py-20">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 text-white">
-              <h2 className="font-serif text-4xl md:text-5xl font-bold leading-tight">
-                <span className="text-gold-gradient">Guyabano</span> Fruit
-                <br />Goodness in Every Sip
-              </h2>
-              <p className="text-forest-200 text-lg leading-relaxed">
-                Made from guyabano fruit known for its naturally occurring plant compounds.
-                Enjoy <strong className="text-gold-300">responsibly</strong> and in moderation
-                as part of a balanced lifestyle.
-              </p>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { icon: Leaf, label: "100% Natural" },
-                  { icon: Droplets, label: "Wellness Drink" },
-                  { icon: ShieldCheck, label: "Walang Preservatives" },
-                  { icon: Heart, label: "Pang-araw-araw" },
-                ].map(({ icon: Icon, label }) => (
-                  <div key={label} className="flex items-center gap-3 bg-forest-800/40 border border-forest-700/40 rounded-xl p-3">
-                    <Icon className="w-5 h-5 text-gold-400 shrink-0" />
-                    <span className="text-forest-100 text-sm font-medium">{label}</span>
-                  </div>
-                ))}
-              </div>
-              <button
-                onClick={scrollToOrder}
-                className="btn-pulse animate-glow bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-8 py-4 rounded-full text-lg transition-all duration-200 hover:scale-105 flex items-center gap-2 shadow-xl"
-              >
-                Mag-Order Na <ArrowRight className="w-5 h-5" />
-              </button>
-            </div>
-            <div>
-              <img
-                src="/w1.jpg"
-                alt="Guyabano Wine Bottles"
-                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* TESTIMONIALS */}
       <section className="bg-forest-950 py-20">
@@ -613,7 +595,7 @@ remove */}
               <img
                 src="/testimony2.jpg"
                 alt="Testimonials"
-                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
+                className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl object-cover"
               />
             </div>
         <div> <p> <br /> <br />   </p> </div>
@@ -898,8 +880,52 @@ remove */}
         </div>
       </section>
 
-      
-      {/* CONTACT SECTION */}
+       {/* SECOND PRODUCT IMAGE */}
+      <section className="bg-gradient-to-b from-forest-900 to-forest-950 py-20">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 text-white">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight">
+                <span className="text-gold-gradient">Guyabano</span> Fruit
+                <br />Goodness in Every Sip
+              </h2>
+              <p className="text-forest-200 text-base leading-relaxed">
+                Made from guyabano fruit known for its naturally occurring plant compounds.
+                Enjoy <strong className="text-gold-300">responsibly</strong> and in moderation
+                as part of a balanced lifestyle.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { icon: Leaf, label: "100% Natural" },
+                  { icon: Droplets, label: "Wellness Drink" },
+                  { icon: ShieldCheck, label: "Walang Preservatives" },
+                  { icon: Heart, label: "Pang-araw-araw" },
+                ].map(({ icon: Icon, label }) => (
+                  <div key={label} className="flex items-center gap-3 bg-forest-800/40 border border-forest-700/40 rounded-xl p-3">
+                    <Icon className="w-5 h-5 text-gold-400 shrink-0" />
+                    <span className="text-forest-100 text-sm font-medium">{label}</span>
+                  </div>
+                ))}
+              </div>
+              <button
+                onClick={scrollToOrder}
+                className="btn-pulse animate-glow bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-6 py-2.5 rounded-full text-base transition-all duration-200 hover:scale-105 flex items-center gap-2 shadow-xl"
+              >
+                Mag-Order Na <ArrowRight className="w-5 h-5" />
+              </button>
+            </div>
+            <div>
+              <img
+                src="/w1.jpg"
+                alt="Guyabano Wine Bottles"
+                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      {/* FAQ */}
       <section className="bg-forest-950 py-12 border-t border-forest-800">
         <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
            <div className="mt-10 flex justify-center">
@@ -1000,7 +1026,7 @@ remove */}
           onClick={scrollToOrder}
           className="btn-pulse animate-glow bg-gold-500 hover:bg-gold-400 text-forest-950 font-bold px-8 py-3.5 rounded-full shadow-2xl text-base flex items-center gap-2"
         >
-          Order Now — {/*₱{selectedPkg.price.toLocaleString("en-PH")} */}
+          Order Now {/*₱{selectedPkg.price.toLocaleString("en-PH")} */}
           <ArrowRight className="w-4 h-4" />
         </button>
       </div>
