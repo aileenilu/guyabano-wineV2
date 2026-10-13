@@ -425,7 +425,7 @@ export default function App() {
       </section>
 
       {/* PRODUCT SHOWCASE */}
-      <section className="bg-gradient-to-b from-forest-950 to-forest-900 py-20">
+      <section id="benefits" className="bg-gradient-to-b from-forest-950 to-forest-900 py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -511,7 +511,7 @@ export default function App() {
 remove */}
       
       {/* SECOND PRODUCT IMAGE */}
-      <section id="benefits" className="bg-gradient-to-b from-forest-900 to-forest-950 py-20">
+      <section className="bg-gradient-to-b from-forest-900 to-forest-950 py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-white">
