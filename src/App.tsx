@@ -604,7 +604,7 @@ remove */}
                 className="w-full max-w-2xl h-auto block pointer-events-none select-none"
               />
           {/* 3. The FLOATING WATERMARK OVERLAY mapped onto the image frame layout */}
-  <div className="absolute inset-0 pointer-events-none flex flex-wrap items-center justify-left gap-17 overflow-hidden opacity-50 select-none z-10">
+  <div className="absolute inset-0 pointer-events-none flex flex-wrap items-center justify-left gap-17.5 overflow-hidden opacity-50 select-none z-10">
     <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-20deg]">ZYNERGIA GABAY KALUSUGAN</span>
     <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-20deg]">ZYNERGIA GABAY KALUSUGAN</span>
     <span className="text-white text-lg font-bold tracking-widest uppercase rotate-[-20deg]">ZYNERGIA GABAY KALUSUGAN</span>
