@@ -312,7 +312,7 @@ export default function App() {
                      
             </p> </div>
             <div className="flex flex-wrap gap-3">
-              {["100% Natural", "Walang Preservatives", "Wellness Drink"].map((tag) => (
+              {["100% Natural", "Walang Preservatives", "Wellness Drink", "Pang-araw-araw"].map((tag) => (
                 <span
                   key={tag}
                   className="flex items-center gap-1.5 text-forest-100 bg-white/10 border border-white/20 rounded-full px-3 py-1 text-sm"
