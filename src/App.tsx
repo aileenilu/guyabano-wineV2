@@ -285,7 +285,7 @@ export default function App() {
               100% Natural • Gawa sa Guyabano Fruit
             </div>
 
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               Nature's Finest
               <br />
               <span className="text-gold-gradient italic">Guyabano</span>
