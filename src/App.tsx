@@ -150,7 +150,32 @@ useEffect(() => {
     return () => clearTimeout(timer); // Clean up the timer if component unmounts
   }
 }, [submitted]);
-  
+
+useEffect(() => {
+    const handleContextMenu = (e) => e.preventDefault();
+    const handleDragStart = (e) => e.preventDefault();
+    const handleKeyDown = (e) => {
+      if (
+        (e.ctrlKey && e.key === "s") || 
+        (e.metaKey && e.key === "s") || 
+        (e.ctrlKey && e.key === "p") || 
+        (e.metaKey && e.key === "p")
+      ) {
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener("contextmenu", handleContextMenu);
+    document.addEventListener("dragstart", handleDragStart);
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("dragstart", handleDragStart);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   const scrollToOrder = () => {
     orderRef.current?.scrollIntoView({ behavior: "smooth" });
   };
