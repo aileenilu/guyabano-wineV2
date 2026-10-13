@@ -133,23 +133,43 @@ export default function App() {
   const orderRef = useRef<HTMLDivElement>(null);
   const [scrolled, setScrolled] = useState(false);
 
+    // 1. Existing Scroll Effect (Keep unchanged)
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-// Automatically redirects to Messenger when the order is submitted
-useEffect(() => {
-  if (submitted) {
-    const timer = setTimeout(() => {
-      // Replaces current page window with your Messenger URL
-      window.location.href = "https://m.me/ZynergiaSagipKalusugan"; 
-    }, 2500); // 2500ms = 2.5 seconds delay
+  // 2. Updated Messenger Redirect with Prefilled Order Details
+  useEffect(() => {
+    if (submitted) {
+      // Find the package data that matches the selected ID
+      const chosenPkg = packages.find(p => p.id === selectedPackage);
+      const pkgLable = chosenPkg ? chosenPkg.label : "Guyabano Wine Package";
+      const pkgTotal = chosenPkg ? chosenPkg.total : 0;
 
-    return () => clearTimeout(timer); // Clean up the timer if component unmounts
-  }
-}, [submitted]);
+      // Draft a clean, professional summary text
+      const orderMessage = 
+        `🛒 **NEW ORDER DETAILS** 🛒\n\n` +
+        `👤 Pangalan: ${form.full_name}\n` +
+        `📞 Telepono: ${form.phone}\n` +
+        `📍 Address: ${form.address}\n\n` +
+        `📦 Package: ${pkgLable}\n` +
+        `💰 Total Amount: ₱${pkgTotal.toLocaleString("en-PH")}\n\n` +
+        `📝 Notes: ${form.notes || "Walang nakalagay"}\n\n` +
+        `Gusto ko pong i-confirm ang aking order. Maraming Salamat!`;
+
+      const timer = setTimeout(() => {
+        // Change "YOUR_PAGE_USERNAME" to your exact Facebook Page username handle
+        const pageUsername = "/ZynergiaSagipKalusugan"; 
+        
+        window.location.href = `https://m.me/ZynergiaSagipKalusugan?text=${encodeURIComponent(orderMessage)}`; 
+      }, 3500); // 
+
+      return () => clearTimeout(timer);
+    }
+  }, [submitted, form, selectedPackage]);
+
   
   const scrollToOrder = () => {
     orderRef.current?.scrollIntoView({ behavior: "smooth" });
