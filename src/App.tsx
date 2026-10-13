@@ -570,7 +570,7 @@ remove */}
               <img
                 src="/testimony2.jpg"
                 alt="Testimonials"
-                className="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl object-cover"
+                className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl object-cover"
               />
             </div>
         <div> <p> <br /> <br />   </p> </div>
