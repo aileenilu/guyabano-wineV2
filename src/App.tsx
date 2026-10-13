@@ -607,7 +607,7 @@ remove */}
   <div className="absolute inset-0 pointer-events-none flex flex-wrap items-center justify-left gap-20 overflow-hidden opacity-65 select-none z-10">
     <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-20deg]">ZYNERGIA GABAY KALUSUGAN </span>
     <span className="text-white text-x1 font-bold tracking-widest uppercase rotate-[0deg]"><br></br><br></br>ZYNERGIA GABAY KALUSUGAN </span>
-    <span className="text-white text-lg font-bold tracking-widest uppercase rotate-[-20deg]">      ZYNERGIA GABAY KALUSUGAN</span>
+    <span className="text-white text-xl font-bold tracking-widest uppercase rotate-[-20deg]">ZYNERGIA GABAY KALUSUGAN</span>
   </div>
             </div>
         <div> <p> <br /> <br />   </p> </div>
