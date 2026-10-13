@@ -97,3 +97,19 @@
 .animate-glow {
   animation: glow 2s ease-in-out infinite;
 }
+
+/* 1. Prevent image/video selections and tap highlights */
+img, video {
+  pointer-events: none !important; /* Prevents long-press save menus on mobile devices */
+  user-select: none !important;     /* Prevents selection highlighting boxes */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* 2. Print Screen / Save as PDF Countermeasure */
+@media print {
+  body {
+    display: none !important; /* Blanks out the whole page if they try to save/print as a PDF file */
+  }
+}
