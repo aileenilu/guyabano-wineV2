@@ -599,7 +599,7 @@ remove */}
             <div> <p> <br /> <br />   </p> </div>
         <div>
               <img
-                src="/testimony2.pg"
+                src="/testimony2.Jpg"
                 alt="Testimonials"
                 className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl object-cover"
               />
