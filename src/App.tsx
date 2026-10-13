@@ -292,13 +292,13 @@ export default function App() {
       
             </h1>
 
-            <p className="text-forest-100 text-lg leading-relaxed max-w-lg text-justify">
+            <p className="text-forest-100 text-base leading-relaxed max-w-lg text-justify">
               Tikman ang likas na sarap at benepisyo! Gawa mula sa{" "}
               <strong className="text-gold-300">100% natural na pagbuburo ng Guyabano</strong>{" "}
               (Annona muricata) — mayaman sa acetogenins, antioxidants, at natural probiotics.             
             </p>
 
-<p className="text-forest-100 text-lg leading-relaxed max-w-lg text-justify">
+<p className="text-forest-100 text-base leading-relaxed max-w-lg text-justify">
    <strong className="text-gold-300">Nature’s Finest Guyabano Wine</strong>{" "}
               {" "} supports gut health, boosts immunity, at helps detox ang body. Crafted sa pamamagitan ng natural fermentation para ma-enhance ang absorption at ma-preserve ang nutrients, ito ay isang refreshing at functional daily tonic—walang artificial additives, pure fermented wellness lang sa bawat inom.{" "}
              
