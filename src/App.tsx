@@ -292,7 +292,7 @@ export default function App() {
       
             </h1>
 
-      <div className="w-full max-w-lg mx-auto space-y-4">
+      <div className="w-full max-w-1x1 mx-auto space-y-4">
         <div className="w-full rounded-2xl overflow-hidden shadow-2xl">
              <img
                 src="/legit.jpg"
