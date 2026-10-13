@@ -82,7 +82,7 @@ const packages = [
     sf: 99,
     total: 1649,
     disc: null,
-    image: "/pack1.jpg",
+    image: "/pack3.jpg",
     highlight: false,
   },
   {
