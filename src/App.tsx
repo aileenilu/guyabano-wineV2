@@ -444,7 +444,7 @@ export default function App() {
                 Ang <span className="text-gold-gradient">Pinaka-Natural</span>
                 <br />na Wellness Drink
               </h2>
-              <p className="text-forest-200 text-lg leading-relaxed">
+              <p className="text-forest-200 text-base leading-relaxed">
                 Ang Nature's Finest Guyabano Wine ay gawa mula sa 100% natural na pagbuburo ng Guyabano
                 (<em>Annona muricata</em>). Bawat bote ay puno ng kalikasan — walang halong artificial
                 additives o preservatives.
