@@ -519,7 +519,7 @@ remove */}
                 <span className="text-gold-gradient">Guyabano</span> Fruit
                 <br />Goodness in Every Sip
               </h2>
-              <p className="text-forest-200 text-lg leading-relaxed">
+              <p className="text-forest-200 text-base leading-relaxed">
                 Made from guyabano fruit known for its naturally occurring plant compounds.
                 Enjoy <strong className="text-gold-300">responsibly</strong> and in moderation
                 as part of a balanced lifestyle.
