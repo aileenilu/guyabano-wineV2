@@ -432,7 +432,7 @@ export default function App() {
               <img
                 src="/701507958_1023553253431513_1977904653140737869_n.jpg"
                 alt="Guyabano Wine - Nature's Finest"
-                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
+                className="w-full max-w-base mx-auto rounded-2xl shadow-2xl object-cover"
               />
             </div>
             <div className="order-1 lg:order-2 space-y-6 text-white">
