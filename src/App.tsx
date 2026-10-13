@@ -326,7 +326,7 @@ export default function App() {
               </button>
               <a
                 href="#benefits"
-                className="btn-pulse border-2 border-white/40 hover:border-gold-400 text-white hover:text-gold-300 font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 flex items-center justify-center gap-2"
+                className="btn-pulse border-2 border-white/40 hover:border-gold-400 text-white hover:text-gold-300 font-semibold px-4 py-2.5 rounded-full text-base transition-all duration-200 flex items-center justify-center gap-2"
               >
                 Alamin Ang Benepisyo
                 <ChevronDown className="w-5 h-5" />
