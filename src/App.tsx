@@ -733,42 +733,45 @@ remove */}
 </div>
 <div className="space-y-3">
   <label className="block text-white font-semibold">Pumili ang Package</label>
-  <div className="grid grid-cols-2 gap-4">
+  
+  {/* Changed to 1 column on mobile, 2 columns on small screens and up */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
     {packages.map((pkg) => (
       <button
-  key={pkg.id}
-  type="button"
-  onClick={() => handlePackageSelect(pkg.id)}
-  className={`relative rounded-xl border-2 p-4 text-left transition-all duration-200 flex flex-col justify-between ${
-    selectedPackage === pkg.id
-      ? "border-gold-500 bg-gold-500/10"
-      : "border-forest-600 bg-forest-900/60 hover:border-forest-500"
-  }`}
->
-  {pkg.tag && (
-    <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold-500 text-forest-950 text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap z-10">
-      {pkg.tag}
-    </span>
-  )}
+        key={pkg.id}
+        type="button"
+        onClick={() => handlePackageSelect(pkg.id)}
+        className={`relative rounded-xl border-2 p-4 text-left transition-all duration-200 flex flex-col justify-between items-center w-full
+          ${selectedPackage === pkg.id
+            ? "border-gold-500 bg-gold-500/10 ring-2 ring-gold-500/20"
+            : "border-forest-600 bg-forest-900/60 hover:border-forest-500"
+          }`}
+      >
+        {/* Floating Promo Tag */}
+        {pkg.tag && (
+          <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold-500 text-forest-950 text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap z-10 shadow-md">
+            {pkg.tag}
+          </span>
+        )}
 
-  <div className="w-full aspect-[4/3] mb-3 rounded-lg overflow-hidden bg-forest-950/30 flex items-center justify-center relative">
-    <img 
-      src={pkg.image || "/placeholder-package.png"} 
-      alt={pkg.label}
-      className="max-w-full max-h-full object-contain pointer-events-none select-none" 
-    />
-  </div>
+        {/* Responsive Image Aspect Frame Container */}
+        <div className="w-full aspect-[4/3] mb-1 rounded-lg overflow-hidden bg-forest-950/30 flex items-center justify-center relative">
+          <img 
+            src={pkg.image || "/placeholder-package.png"} 
+            alt={pkg.label}
+            className="max-w-full max-h-full object-contain pointer-events-none select-none p-1" 
+          />
+        </div>
 
- 
-  {selectedPackage === pkg.id && (
-    <CheckCircle2 className="absolute top-3 right-3 w-5 h-5 text-gold-400 z-10 bg-forest-950 rounded-full" />
-  )}
-</button>
-
+        {/* Floating Selection Checkmark Indicator Icon */}
+        {selectedPackage === pkg.id && (
+          <CheckCircle2 className="absolute top-3 right-3 w-5 h-5 text-gold-400 z-10 bg-forest-950 rounded-full shadow" />
+        )}
+      </button>
     ))}
   </div>
 </div>
-             
+      
 
              {/* Total price display */}
 <div className="bg-forest-950/50 border border-gold-500/30 rounded-xl px-5 py-4 space-y-2">
