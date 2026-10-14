@@ -711,11 +711,7 @@ remove */}
 
               
 {/* Package selection */}
-
-<div className="space-y-3">
-  <label className="block text-white font-semibold">Pumili ang Package</label>
-  <div className="grid grid-cols-2 gap-4">
-    {packages.map((pkg) => (<div className="flex flex-wrap gap-7 justify-center items-center">
+<div className="flex flex-wrap gap-7 justify-center items-center">
   {[
     { src: "/cod.jpg", alt: "100% Natural" },
     { src: "/jnt.png", alt: "Walang Preservatives" },
@@ -735,6 +731,10 @@ remove */}
     </span>
   ))}
 </div>
+<div className="space-y-3">
+  <label className="block text-white font-semibold">Pumili ang Package</label>
+  <div className="grid grid-cols-2 gap-4">
+    {packages.map((pkg) => (
       <button
   key={pkg.id}
   type="button"
