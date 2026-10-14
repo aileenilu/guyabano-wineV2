@@ -979,6 +979,28 @@ remove */}
   </div></div></div>
            </div></div>
                 <br /><br /><br />
+
+          <div className="flex flex-wrap gap-3 items-center">
+  {[
+    { src: "/pack1.jpg", alt: "100% Natural" },
+    { src: "/pack2.jpg", alt: "Walang Preservatives" },
+    { src: "/pack3.jpg", alt: "Wellness Drink" },
+    { src: "/pack4.jpg", alt: "Pang-araw-araw" }
+  ].map((tag) => (
+    <span
+      key={tag.alt}
+      className="flex items-center border border-white/20 bg-white/5 rounded-xl p-1 transition-transform hover:scale-105"
+    >
+      <img 
+        src={tag.src} 
+        alt={tag.alt} 
+        className="h-10 w-auto object-contain" 
+        loading="lazy"
+      />
+    </span>
+  ))}
+</div>
+
  <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
           <h3 className="font-serif text-3xl font-bold text-white">
             Para sa mga <span className="text-gold-gradient">Katanungan</span>
