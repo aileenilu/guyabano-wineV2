@@ -715,7 +715,7 @@ remove */}
         <div className="w-full px-1">
           <div className="flex flex-nowrap gap-2 sm:gap-4 justify-center items-center">
             {[
-              { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
+              { src: "/cod.png", alt: "Cash on Delivery Nationwide" },
               { src: "/jnt.png", alt: "Jnt Express" },
               { src: "/lbc.png", alt: "LBC Express" },
               { src: "/spx.webp", alt: "SPX Express" }
@@ -1034,7 +1034,7 @@ remove */}
         <div className="w-full px-1">
           <div className="flex flex-nowrap gap-2 sm:gap-4 justify-center items-center">
             {[
-              { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
+              { src: "/cod.png", alt: "Cash on Delivery Nationwide" },
               { src: "/jnt.png", alt: "Jnt Express" },
               { src: "/lbc.png", alt: "LBC Express" },
               { src: "/spx.webp", alt: "SPX Express" }
