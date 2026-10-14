@@ -897,7 +897,7 @@ remove */}
           </div>
           <div className="flex items-center justify-center h-14 w-14 sm:h-16 sm:w-16 bg-white/10 border border-white/20 rounded-full p-1.5 shadow-md backdrop-blur-sm">
             <img 
-              src="/pizap.png" 
+              src="/100.png" 
               alt="Quality Guarantee Seal" 
               className="h-full w-full object-contain pointer-events-none select-none rounded-full"
               loading="lazy"
