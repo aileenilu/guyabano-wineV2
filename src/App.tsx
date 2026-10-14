@@ -711,7 +711,7 @@ remove */}
 
               
 {/* Package selection */}
-<div className="flex flex-wrap gap-6 justify-center items-center">
+<div className="flex flex-wrap gap-4 justify-center items-center">
   {[
     { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
     { src: "/jnt.png", alt: "Jnt Express" },
