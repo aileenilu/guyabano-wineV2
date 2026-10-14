@@ -893,7 +893,7 @@ remove */}
             loading="lazy"
           />
           <img 
-            src="/pizap.png" 
+            src="/100.png" 
             alt="Quality Guarantee Seal" 
             className="h-12 w-auto sm:h-16 object-contain pointer-events-none select-none"
             loading="lazy"
