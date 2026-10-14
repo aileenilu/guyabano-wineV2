@@ -887,7 +887,7 @@ remove */}
 
 <div className="flex flex-row flex-nowrap items-center justify-center gap-6 py-2">
    <img 
-            src="/cod.jpg" 
+            src="/cod.png" 
             alt="Cash on Delivery Nationwide" 
             className="h-[80px] w-auto  object-contain pointer-events-none select-none"
             loading="lazy"
