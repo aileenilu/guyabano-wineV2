@@ -913,8 +913,15 @@ remove */}
                 Sa pag-submit ng form na ito, sumasang-ayon ka na makipag-ugnayan sa iyo ang aming team
                 para sa kumpirmasyon ng order.
               </p>
-            </form>
+           </form>
           )}
+       <div>
+      <img
+        src="fda.png"
+        alt="FDA"
+        className="h-16 w-auto mx-auto rounded-3xl shadow-3xl object-cover"
+              />
+            </div>  
         </div>
     
       </section>
