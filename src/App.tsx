@@ -885,7 +885,7 @@ remove */}
                 />
               </div>
 
-<div className="flex flex-row flex-nowrap items-center justify-center gap-6 py-2">
+<div className="flex flex-row flex-nowrap items-center justify-center gap-6 py-2"> 
           <img 
             src="/fda.png" 
             alt="FDA Certified Seal" 
