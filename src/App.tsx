@@ -918,7 +918,7 @@ remove */}
         </div>
     <div>
               <img
-                src="/testimony1.jpg"
+                src="fda.png"
                 alt="Testimonials"
                 className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
               />
