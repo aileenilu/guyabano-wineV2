@@ -916,13 +916,7 @@ remove */}
             </form>
           )}
         </div>
-    <div>
-              <img
-                src="fda.png"
-                alt="Testimonials"
-                className="h-16 w-auto mx-auto rounded-3xl shadow-3xl object-cover"
-              />
-            </div>  
+    
       </section>
 
        {/* SECOND PRODUCT IMAGE */}
