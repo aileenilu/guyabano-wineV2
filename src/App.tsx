@@ -711,7 +711,7 @@ remove */}
 
               
 {/* Package selection */}
-<div className="flex flex-wrap gap-7 justify-center items-center">
+<div className="flex flex-wrap gap-12 justify-center items-center">
   {[
     { src: "/cod.jpg", alt: "100% Natural" },
     { src: "/jnt.png", alt: "Walang Preservatives" },
