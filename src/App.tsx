@@ -663,8 +663,8 @@ remove */}
 
 
       
-      {/* ORDER SECTION */}
-      <section ref={orderRef} className="bg-gradient-to-b from-forest-950 to-forest-900 py-20">
+{/* ORDER SECTION */}
+<section ref={orderRef} className="bg-gradient-to-b from-forest-950 to-forest-900 py-20">
         <div className="max-w-2xl mx-auto px-4">
           <div className="text-center space-y-4 mb-10">
             <div className="inline-flex items-center gap-2 bg-gold-500/20 border border-gold-500/30 rounded-full px-4 py-1.5 text-gold-300 text-sm">
@@ -1004,26 +1004,30 @@ remove */}
            </div></div>
                 <br /><br /><br />
 
-<div className="flex flex-wrap gap-7 justify-center items-center">
-  {[
-    { src: "/cod.jpg", alt: "100% Natural" },
-    { src: "/jnt.png", alt: "Walang Preservatives" },
-    { src: "/lbc.png", alt: "Wellness Drink" },
-    { src: "/spx.webp", alt: "Pang-araw-araw" }
-  ].map((tag) => (
-    <span
-      key={tag.alt}
-      className="flex items-center  border border-white/20 bg-white/5 rounded-xl p-1 transition-transform hover:scale-105"
-    >
-      <img 
-        src={tag.src} 
-        alt={tag.alt} 
-        className="h-[100px] w-auto object-contain" 
-        loading="lazy"
-      />
-    </span>
-  ))}
-</div>
+{/* MODIFIED: Fixed Single Row Shipping Logos Section */}
+        <div className="w-full px-1">
+          <div className="flex flex-nowrap gap-2 sm:gap-4 justify-center items-center">
+            {[
+              { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
+              { src: "/jnt.png", alt: "Jnt Express" },
+              { src: "/lbc.png", alt: "LBC Express" },
+              { src: "/spx.webp", alt: "SPX Express" }
+            ].map((tag) => (
+              <span
+                key={tag.alt}
+                className="flex items-center justify-center border border-white/20 bg-white/5 rounded-xl p-1 sm:p-1.5 min-w-0 flex-1 transition-transform hover:scale-105"
+              >
+                <img 
+                  src={tag.src} 
+                  alt={tag.alt} 
+                  className="w-full h-auto max-h-[35px] sm:max-h-[55px] md:max-h-[75px] object-contain pointer-events-none select-none" 
+                  loading="lazy"
+                />
+              </span>
+            ))}
+          </div>
+        </div>
+
 
  <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
           <h3 className="font-serif text-3xl font-bold text-white">
