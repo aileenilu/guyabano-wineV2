@@ -722,7 +722,7 @@ remove */}
             ].map((tag) => (
               <span
                 key={tag.alt}
-                className="flex items-center justify-center border border-white/20 bg-white/5 rounded-xl p-1 sm:p-1.5 min-w-0 flex-1 transition-transform hover:scale-105"
+                className="flex items-center justify-center border border-white/20 bg-white/5 rounded-xl p-1 sm:p-1.5 min-w-0 flex-1 "
               >
                 <img 
                   src={tag.src} 
