@@ -711,10 +711,30 @@ remove */}
 
               
 {/* Package selection */}
+
 <div className="space-y-3">
   <label className="block text-white font-semibold">Pumili ang Package</label>
   <div className="grid grid-cols-2 gap-4">
-    {packages.map((pkg) => (
+    {packages.map((pkg) => (<div className="flex flex-wrap gap-7 justify-center items-center">
+  {[
+    { src: "/cod.jpg", alt: "100% Natural" },
+    { src: "/jnt.png", alt: "Walang Preservatives" },
+    { src: "/lbc.png", alt: "Wellness Drink" },
+    { src: "/spx.webp", alt: "Pang-araw-araw" }
+  ].map((tag) => (
+    <span
+      key={tag.alt}
+      className="flex items-center  border border-white/20 bg-white/5 rounded-xl p-1 transition-transform hover:scale-105"
+    >
+      <img 
+        src={tag.src} 
+        alt={tag.alt} 
+        className="h-[100px] w-auto object-contain" 
+        loading="lazy"
+      />
+    </span>
+  ))}
+</div>
       <button
   key={pkg.id}
   type="button"
@@ -980,7 +1000,7 @@ remove */}
            </div></div>
                 <br /><br /><br />
 
-          <div className="flex flex-wrap gap-7 justify-center items-center">
+<div className="flex flex-wrap gap-7 justify-center items-center">
   {[
     { src: "/cod.jpg", alt: "100% Natural" },
     { src: "/jnt.png", alt: "Walang Preservatives" },
