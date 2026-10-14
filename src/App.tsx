@@ -914,14 +914,15 @@ remove */}
                 para sa kumpirmasyon ng order.
               </p>
            </form>
-          )}
-       <div>
+      <div>
       <img
         src="fda.png"
         alt="FDA"
         className="h-16 w-auto mx-auto rounded-3xl shadow-3xl object-cover"
               />
             </div>  
+          )}
+       
         </div>
     
       </section>
