@@ -994,7 +994,7 @@ remove */}
       <img 
         src={tag.src} 
         alt={tag.alt} 
-        className="h-sm w-auto object-contain" 
+        className="h-30 w-auto object-contain" 
         loading="lazy"
       />
     </span>
