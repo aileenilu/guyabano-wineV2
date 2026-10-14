@@ -920,7 +920,7 @@ remove */}
               <img
                 src="fda.png"
                 alt="Testimonials"
-                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
+                className="h-auto w-auto mx-auto rounded-2xl shadow-2xl object-cover"
               />
             </div>  
       </section>
