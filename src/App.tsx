@@ -885,25 +885,20 @@ remove */}
                 />
               </div>
 
-{/* ADDED: 2 Round Logos Side-by-Side in a Single Line */}
-        <div className="flex flex-row flex-nowrap items-center justify-center gap-6 py-2">
-          <div className="flex items-center justify-center h-14 w-14 sm:h-16 sm:w-16 bg-white/10 border border-white/20 rounded-full p-1.5 shadow-md backdrop-blur-sm">
-            <img 
-              src="/fda.png" 
-              alt="FDA Certified Seal" 
-              className="h-full w-full object-contain pointer-events-none select-none rounded-full"
-              loading="lazy"
-            />
-          </div>
-          <div className="flex items-center justify-center h-14 w-14 sm:h-16 sm:w-16 bg-white/10 border border-white/20 rounded-full p-1.5 shadow-md backdrop-blur-sm">
-            <img 
-              src="/100.png" 
-              alt="Quality Guarantee Seal" 
-              className="h-full w-full object-contain pointer-events-none select-none rounded-full"
-              loading="lazy"
-            />
-          </div>
-        </div>  
+<div className="flex flex-row flex-nowrap items-center justify-center gap-6 py-2">
+          <img 
+            src="/fda.png" 
+            alt="FDA Certified Seal" 
+            className="h-12 w-auto sm:h-16 object-contain pointer-events-none select-none"
+            loading="lazy"
+          />
+          <img 
+            src="/100.png" 
+            alt="Quality Guarantee Seal" 
+            className="h-12 w-auto sm:h-16 object-contain pointer-events-none select-none"
+            loading="lazy"
+          />
+        </div>
   
               {submitError && (
                 <div className="bg-red-500/10 border border-red-500/40 rounded-xl px-4 py-3 text-red-300 text-sm">
