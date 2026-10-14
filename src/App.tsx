@@ -1030,31 +1030,6 @@ remove */}
            </div></div>
                 <br /><br /><br />
 
-{/* MODIFIED: Fixed Single Row Shipping Logos Section */}
-        <div className="w-full px-1">
-          <div className="flex flex-nowrap gap-2 sm:gap-4 justify-center items-center">
-            {[
-              { src: "/cod.png", alt: "Cash on Delivery Nationwide" },
-              { src: "/jnt.png", alt: "Jnt Express" },
-              { src: "/lbc.png", alt: "LBC Express" },
-              { src: "/spx.webp", alt: "SPX Express" }
-            ].map((tag) => (
-              <span
-                key={tag.alt}
-                className="flex items-center justify-center border border-white/20 bg-white/5 rounded-xl p-1 sm:p-1.5 min-w-0 flex-1 transition-transform hover:scale-105"
-              >
-                <img 
-                  src={tag.src} 
-                  alt={tag.alt} 
-                  className="w-full h-auto max-h-[35px] sm:max-h-[55px] md:max-h-[75px] object-contain pointer-events-none select-none" 
-                  loading="lazy"
-                />
-              </span>
-            ))}
-          </div>
-        </div>
-
-
  <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
           <h3 className="font-serif text-3xl font-bold text-white">
             Para sa mga <span className="text-gold-gradient">Katanungan</span>
