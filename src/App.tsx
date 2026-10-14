@@ -980,7 +980,7 @@ remove */}
            </div></div>
                 <br /><br /><br />
 
-          <div className="flex flex-wrap w-lg gap-7 items-center">
+          <div className="flex flex-wrap gap-7 items-center">
   {[
     { src: "/pack1.jpg", alt: "100% Natural" },
     { src: "/pack2.jpg", alt: "Walang Preservatives" },
@@ -989,7 +989,7 @@ remove */}
   ].map((tag) => (
     <span
       key={tag.alt}
-      className="flex items-center border border-white/20 bg-white/5 rounded-xl p-1 transition-transform hover:scale-105"
+      className="flex items-center w-lg border border-white/20 bg-white/5 rounded-xl p-1 transition-transform hover:scale-105"
     >
       <img 
         src={tag.src} 
