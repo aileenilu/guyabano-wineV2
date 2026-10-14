@@ -916,6 +916,13 @@ remove */}
             </form>
           )}
         </div>
+    <div>
+              <img
+                src="/testimony1.jpg"
+                alt="Testimonials"
+                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover"
+              />
+            </div>  
       </section>
 
        {/* SECOND PRODUCT IMAGE */}
