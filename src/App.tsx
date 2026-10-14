@@ -711,8 +711,9 @@ remove */}
 
               
 {/* Package selection */}
-<div className="w-full overflow-x-auto no-scrollbar py-2">
-  <div className="flex flex-nowrap gap-3 sm:gap-6 md:gap-12 justify-start sm:justify-center items-center px-4 min-w-max mx-auto">
+<div className="w-full overflow-hidden py-2">
+  {/* flex-nowrap keeps all logos strictly lined up in 1 row */}
+  <div className="flex flex-nowrap gap-3 sm:gap-6 md:gap-12 justify-center items-center px-4">
     {[
       { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
       { src: "/jnt.png", alt: "Jnt Express" },
@@ -726,15 +727,12 @@ remove */}
         <img 
           src={tag.src} 
           alt={tag.alt} 
-          {/* 
-            shrink-0: Essential so the flex container doesn't squish the image width.
-            h-8 down to small mobile, h-12 on tablets, and max h-[75px] on desktop.
-          */}
+          {/* shrink-0 keeps the logos from being squished horizontally on mobile */}
           className="h-8 sm:h-12 md:h-[75px] w-auto object-contain pointer-events-none select-none shrink-0" 
           loading="lazy"
         />
       </span>
-    ))}
+    ))} {/* 👈 FIXED: Properly closed the map function array bracket block */}
   </div>
 </div>
 
