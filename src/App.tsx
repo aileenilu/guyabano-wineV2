@@ -755,7 +755,7 @@ remove */}
     <img 
       src={pkg.image || "/placeholder-package.png"} 
       alt={pkg.label}
-      className="h-[500px] w-auto object-contain"
+      className="max-w-full max-h-full object-contain pointer-events-none select-none" 
     />
   </div>
 
