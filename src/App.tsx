@@ -145,7 +145,7 @@ export default function App() {
     if (submitted) {
       // Find the package data that matches the selected ID
       const chosenPkg = packages.find(p => p.id === selectedPackage);
-      const pkgLable = chosenPkg ? chosenPkg.label : "Guyabano Wine Package";
+      const pkgLabel = chosenPkg ? chosenPkg.label : "Guyabano Wine Package";
       const pkgTotal = chosenPkg ? chosenPkg.total : 0;
 
       // Draft a clean, professional summary text
@@ -154,7 +154,7 @@ export default function App() {
         `👤 Pangalan: ${form.full_name}\n` +
         `📞 Telepono: ${form.phone}\n` +
         `📍 Address: ${form.address}\n\n` +
-        `📦 Package: ${pkgLable}\n` +
+        `📦 Package: ${pkgLabel}\n` +
         `💰 Total Amount: ₱${pkgTotal.toLocaleString("en-PH")}\n\n` +
         `📝 Notes: ${form.notes || "Walang nakalagay"}\n\n` +
         `Gusto ko pong i-confirm ang aking order. Maraming Salamat!`;
@@ -227,7 +227,7 @@ export default function App() {
         address: form.address.trim(),
         quantity: pkg.quantity,
         package: pkg.id,
-        total_price: pkg.price,
+        total_price: pkg.total,
         notes: form.notes.trim() || null,
       };
 
