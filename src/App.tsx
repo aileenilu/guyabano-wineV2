@@ -161,8 +161,6 @@ export default function App() {
 
       const timer = setTimeout(() => {
         // Change "YOUR_PAGE_USERNAME" to your exact Facebook Page username handle
-        const pageUsername = "/ZynergiaSagipKalusugan"; 
-        
         window.location.href = `https://m.me/ZynergiaSagipKalusugan?text=${encodeURIComponent(orderMessage)}`; 
       }, 3500); // 
 
@@ -171,9 +169,9 @@ export default function App() {
   }, [submitted, form, selectedPackage]);
 
   useEffect(() => {
-    const handleContextMenu = (e) => e.preventDefault();
-    const handleDragStart = (e) => e.preventDefault();
-    const handleKeyDown = (e) => {
+    const handleContextMenu = (e: Event) => e.preventDefault();
+    const handleDragStart = (e: Event) => e.preventDefault();
+    const handleKeyDown = (e: KeyboardEvent) => {
       if (
         (e.ctrlKey && e.key === "s") || 
         (e.metaKey && e.key === "s") || 
@@ -972,7 +970,7 @@ remove */}
 • Manok (Poultry chicken) 
           </span> <br />
           </p> <br />
-   <div classname="flex items-center justify-center">
+   <div className="flex items-center justify-center">
              <img
                 src="/c5615e2036fc8b44bc034095e62ae4d6_GUYABANO_WINE.jpg"
                 alt="Nature's Finest Guyabano Wine"
@@ -980,7 +978,7 @@ remove */}
               />
   </div></div></div>
            </div></div>
-                <br></br><br></br><br></br>
+                <br /><br /><br />
  <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
           <h3 className="font-serif text-3xl font-bold text-white">
             Para sa mga <span className="text-gold-gradient">Katanungan</span>
