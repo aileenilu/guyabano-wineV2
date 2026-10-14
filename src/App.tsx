@@ -711,7 +711,7 @@ remove */}
 
               
 {/* Package selection */}
-<div className="flex flex-wrap gap-12 justify-center items-center">
+<div className="flex flex-wrap gap-6 justify-center items-center">
   {[
     { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
     { src: "/jnt.png", alt: "Jnt Express" },
@@ -725,7 +725,7 @@ remove */}
       <img 
         src={tag.src} 
         alt={tag.alt} 
-        className="h-[75px] w-auto object-contain" 
+        className="h-16 w-auto object-contain" 
         loading="lazy"
       />
     </span>
