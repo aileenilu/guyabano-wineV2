@@ -884,7 +884,13 @@ remove */}
                   className="w-full bg-forest-900/60 border border-forest-600 focus:border-gold-500 rounded-xl px-4 py-3 text-white placeholder-forest-400 focus:outline-none focus:ring-2 focus:ring-gold-500/50 transition-all resize-none"
                 />
               </div>
-
+<div>
+      <img
+        src="fda.png"
+        alt="FDA"
+        className="h-16 w-auto mx-auto rounded-3xl shadow-3xl object-cover"
+              />
+            </div>  
               {submitError && (
                 <div className="bg-red-500/10 border border-red-500/40 rounded-xl px-4 py-3 text-red-300 text-sm">
                   {submitError}
