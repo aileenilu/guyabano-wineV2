@@ -989,12 +989,12 @@ remove */}
   ].map((tag) => (
     <span
       key={tag.alt}
-      className="flex items-center w-lg border border-white/20 bg-white/5 rounded-xl p-1 transition-transform hover:scale-105"
+      className="flex items-center  border border-white/20 bg-white/5 rounded-xl p-1 transition-transform hover:scale-105"
     >
       <img 
         src={tag.src} 
         alt={tag.alt} 
-        className="h-10 w-auto object-contain" 
+        className="h-full w-auto object-contain" 
         loading="lazy"
       />
     </span>
