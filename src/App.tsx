@@ -711,38 +711,26 @@ remove */}
 
               
 {/* Package selection */}
-{/* 
-  flex-nowrap forces everything to stay in 1 single row.
-  overflow-x-auto allows touch swiping on mobile if the screen gets too narrow.
-  scrollbar-none or hide styles can keep it visually clean.
-*/}
-<div className="w-full overflow-x-auto no-scrollbar py-2">
-  <div className="flex flex-nowrap gap-3 sm:gap-6 md:gap-12 justify-start sm:justify-center items-center px-4 min-w-max mx-auto">
-    {[
-      { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
-      { src: "/jnt.png", alt: "Jnt Express" },
-      { src: "/lbc.png", alt: "LBC Express" },
-      { src: "/spx.webp", alt: "SPX Express" }
-    ].map((tag) => (
-      <span
-        key={tag.alt}
-        className="flex items-center shrink-0 border border-white/20 bg-white/5 rounded-xl p-1.5 transition-transform hover:scale-105"
-      >
-        <img 
-          src={tag.src} 
-          alt={tag.alt} 
-          {/* 
-            shrink-0: Essential so the flex container doesn't squish the image width.
-            h-8 down to small mobile, h-12 on tablets, and max h-[75px] on desktop.
-          */}
-          className="h-8 sm:h-12 md:h-[75px] w-auto object-contain pointer-events-none select-none shrink-0" 
-          loading="lazy"
-        />
-      </span>
-    ))}
-  </div>
+<div className="flex flex-wrap gap-12 justify-center items-center">
+  {[
+    { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
+    { src: "/jnt.png", alt: "Jnt Express" },
+    { src: "/lbc.png", alt: "LBC Express" },
+    { src: "/spx.webp", alt: "SPX Express" }
+  ].map((tag) => (
+    <span
+      key={tag.alt}
+      className="flex items-center  border border-white/20 bg-white/5 rounded-xl p-1 transition-transform hover:scale-105"
+    >
+      <img 
+        src={tag.src} 
+        alt={tag.alt} 
+        className="h-[75] w-auto object-contain" 
+        loading="lazy"
+      />
+    </span>
+  ))}
 </div>
-
 <div className="space-y-3">
   <label className="block text-white font-semibold">Pumili ang Package</label>
   
