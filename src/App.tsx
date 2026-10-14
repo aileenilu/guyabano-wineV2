@@ -891,7 +891,8 @@ remove */}
             <img 
               src="/fda.png" 
               alt="FDA Certified Seal" 
-              className="h-full w-full object-contain pointer-events-none select-none rounded-full"
+              className="h-14 w-14 sm:h-20 sm:w-20 object-contain pointer-events-none select-none"
+
               loading="lazy"
             />
           </div>
@@ -899,7 +900,7 @@ remove */}
             <img 
               src="/100.png" 
               alt="Quality Guarantee Seal" 
-              className="h-full w-full object-contain pointer-events-none select-none rounded-full"
+              className="h-14 w-14 sm:h-20 sm:w-20 object-contain pointer-events-none select-none"
               loading="lazy"
             />
           </div>
