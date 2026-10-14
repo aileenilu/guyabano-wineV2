@@ -982,10 +982,10 @@ remove */}
 
           <div className="flex flex-wrap gap-7 items-center">
   {[
-    { src: "/pack1.jpg", alt: "100% Natural" },
-    { src: "/pack2.jpg", alt: "Walang Preservatives" },
-    { src: "/pack3.jpg", alt: "Wellness Drink" },
-    { src: "/pack4.jpg", alt: "Pang-araw-araw" }
+    { src: "/cod.jpg", alt: "100% Natural" },
+    { src: "/jnt.png", alt: "Walang Preservatives" },
+    { src: "/lbc.png", alt: "Wellness Drink" },
+    { src: "/spx.webp", alt: "Pang-araw-araw" }
   ].map((tag) => (
     <span
       key={tag.alt}
