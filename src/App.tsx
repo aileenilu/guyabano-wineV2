@@ -711,26 +711,31 @@ remove */}
 
               
 {/* Package selection */}
-<div className="flex flex-wrap gap-12 justify-center items-center">
-  {[
-    { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
-    { src: "/jnt.png", alt: "Jnt Express" },
-    { src: "/lbc.png", alt: "LBC Express" },
-    { src: "/spx.webp", alt: "SPX Express" }
-  ].map((tag) => (
-    <span
-      key={tag.alt}
-      className="flex items-center  border border-white/20 bg-white/5 rounded-xl p-1 transition-transform hover:scale-105"
-    >
-      <img 
-        src={tag.src} 
-        alt={tag.alt} 
-        className="h-[75px] w-auto object-contain" 
-        loading="lazy"
-      />
-    </span>
-  ))}
+<div className="w-full px-2">
+  {/* Changed flex-wrap to flex-nowrap to lock them in one row, and adjusted gap to fit small screens */}
+  <div className="flex flex-nowrap gap-2 sm:gap-4 md:gap-6 justify-center items-center max-w-4xl mx-auto">
+    {[
+      { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
+      { src: "/jnt.png", alt: "Jnt Express" },
+      { src: "/lbc.png", alt: "LBC Express" },
+      { src: "/spx.webp", alt: "SPX Express" }
+    ].map((tag) => (
+      <span
+        key={tag.alt}
+        className="flex items-center justify-center border border-white/20 bg-white/5 rounded-xl p-1 sm:p-1.5 transition-transform hover:scale-105 min-w-0 flex-1"
+      >
+        <img 
+          src={tag.src} 
+          alt={tag.alt} 
+          {/* Changed fixed h-[75px] to max-h classes so they automatically shrink on mobile */}
+          className="w-full h-auto max-h-[35px] sm:max-h-[55px] md:max-h-[75px] object-contain pointer-events-none select-none" 
+          loading="lazy"
+        />
+      </span>
+    ))}
+  </div>
 </div>
+
     
 <div className="space-y-3">
   <label className="block text-white font-semibold">Pumili ang Package</label>
