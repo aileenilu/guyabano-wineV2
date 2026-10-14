@@ -713,10 +713,10 @@ remove */}
 {/* Package selection */}
 <div className="flex flex-wrap gap-12 justify-center items-center">
   {[
-    { src: "/cod.jpg", alt: "100% Natural" },
-    { src: "/jnt.png", alt: "Walang Preservatives" },
-    { src: "/lbc.png", alt: "Wellness Drink" },
-    { src: "/spx.webp", alt: "Pang-araw-araw" }
+    { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
+    { src: "/jnt.png", alt: "Jnt Express" },
+    { src: "/lbc.png", alt: "LBC Express" },
+    { src: "/spx.webp", alt: "SPX Express" }
   ].map((tag) => (
     <span
       key={tag.alt}
@@ -731,33 +731,56 @@ remove */}
     </span>
   ))}
 </div>
-<div className="space-y-3">
-  <label className="block text-white font-semibold">Pumili ang Package</label>
-  <div className="grid grid-cols-2 gap-4">
-    {packages.map((pkg) => (
-      <button
-  key={pkg.id}
-  type="button"
-  onClick={() => handlePackageSelect(pkg.id)}
-  className={`relative rounded-xl border-2 p-4 text-left transition-all duration-200 flex flex-col justify-between ${
-    selectedPackage === pkg.id
-      ? "border-gold-500 bg-gold-500/10"
-      : "border-forest-600 bg-forest-900/60 hover:border-forest-500"
-  }`}
->
-  {pkg.tag && (
-    <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold-500 text-forest-950 text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap z-10">
-      {pkg.tag}
-    </span>
-  )}
+<div className="w-full max-w-4xl mx-auto px-4 py-8 bg-emerald-950 rounded-2xl">
+      {/* Title */}
+      <h2 className="text-xl font-bold text-white mb-8 text-center sm:text-left">
+        Pumili ang Package
+      </h2>
 
-  <div className="w-full aspect-[4/3] mb-3 rounded-lg overflow-hidden bg-forest-950/30 flex items-center justify-center relative">
-    <img 
-      src={pkg.image || "/placeholder-package.png"} 
-      alt={pkg.label}
-      className="max-w-full max-h-full object-contain pointer-events-none select-none" 
-    />
-  </div>
+      {/* Grid: 1 column on mobile, 2 columns on desktop tablets */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        {packages.map((pkg) => {
+          const isSelected = selectedPackage === pkg.id;
+
+          return (
+            <div
+              key={pkg.id}
+              onClick={() => setSelectedPackage(pkg.id)}
+              className={`relative cursor-pointer flex flex-col items-center justify-center border-2 rounded-2xl p-4 transition-all duration-200 select-none bg-white
+                ${isSelected 
+                  ? "border-amber-400 ring-4 ring-amber-400/20 shadow-xl" 
+                  : "border-transparent hover:border-emerald-700/50 shadow-md"
+                }`}
+            >
+              {/* Top Floating Badge: Best Value */}
+              {pkg.isBestValue && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-emerald-950 text-[11px] font-black uppercase tracking-wider px-5 py-1 rounded-full shadow-md whitespace-nowrap z-10">
+                  BEST VALUE: SAVE ₱551
+                </div>
+              )}
+
+              {/* Top Right Floating Badge: Selected Checkmark */}
+              {isSelected && (
+                <div className="absolute -top-2.5 -right-2.5 bg-amber-400 text-emerald-950 rounded-full p-0.5 shadow-md border-2 border-white z-10 animate-scaleIn">
+                  <CheckCircle2 className="w-5 h-5 fill-emerald-950 text-amber-400" />
+                </div>
+              )}
+
+              {/* Package Image Asset */}
+              <div className="w-full overflow-hidden rounded-xl bg-neutral-50 flex items-center justify-center p-2">
+                <img 
+                  src={pkg.src} 
+                  alt={pkg.alt} 
+                  className="w-full h-auto min-h-[140px] max-h-[220px] object-contain rounded-xl" 
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
 
  
   {selectedPackage === pkg.id && (
