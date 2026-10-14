@@ -886,6 +886,12 @@ remove */}
               </div>
 
 <div className="flex flex-row flex-nowrap items-center justify-center gap-6 py-2">
+   <img 
+            src="/cod.png" 
+            alt="Quality Guarantee Seal" 
+            className="h-[80px] w-auto  object-contain pointer-events-none select-none"
+            loading="lazy"
+          />
           <img 
             src="/fda.png" 
             alt="FDA Certified Seal" 
