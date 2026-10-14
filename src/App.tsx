@@ -895,7 +895,7 @@ remove */}
           <img 
             src="/100.png" 
             alt="Quality Guarantee Seal" 
-            className="h-12 w-auto sm:h-16 object-contain pointer-events-none select-none"
+            className="h-14 w-auto sm:h-16 object-contain pointer-events-none select-none"
             loading="lazy"
           />
         </div>
