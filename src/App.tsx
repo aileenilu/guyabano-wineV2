@@ -980,7 +980,7 @@ remove */}
            </div></div>
                 <br /><br /><br />
 
-          <div className="flex flex-wrap gap-7 items-center">
+          <div className="flex flex-wrap gap-7 justify-center items-center">
   {[
     { src: "/cod.jpg", alt: "100% Natural" },
     { src: "/jnt.png", alt: "Walang Preservatives" },
