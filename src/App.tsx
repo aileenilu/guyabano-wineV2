@@ -889,13 +889,14 @@ remove */}
           <img 
             src="/fda.png" 
             alt="FDA Certified Seal" 
-            className="h-12 w-auto sm:h-16 object-contain pointer-events-none select-none"
+            {/* Forces exact identical square footprints (56px on mobile, 80px on desktop) */}
+            className="h-14 w-14 sm:h-20 sm:w-20 object-contain pointer-events-none select-none"
             loading="lazy"
           />
           <img 
-            src="/100.png" 
+            src="/pizap.png" 
             alt="Quality Guarantee Seal" 
-            className="h-12 w-auto sm:h-16 object-contain pointer-events-none select-none"
+            className="h-14 w-14 sm:h-20 sm:w-20 object-contain pointer-events-none select-none"
             loading="lazy"
           />
         </div>
