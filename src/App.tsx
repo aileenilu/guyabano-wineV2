@@ -711,31 +711,26 @@ remove */}
 
               
 {/* Package selection */}
-<div className="w-full overflow-hidden py-2">
-  {/* flex-nowrap keeps all logos strictly lined up in 1 row */}
-  <div className="flex flex-nowrap gap-3 sm:gap-6 md:gap-12 justify-center items-center px-4">
-    {[
-      { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
-      { src: "/jnt.png", alt: "Jnt Express" },
-      { src: "/lbc.png", alt: "LBC Express" },
-      { src: "/spx.webp", alt: "SPX Express" }
-    ].map((tag) => (
-      <span
-        key={tag.alt}
-        className="flex items-center shrink-0 border border-white/20 bg-white/5 rounded-xl p-1.5 transition-transform hover:scale-105"
-      >
-        <img 
-          src={tag.src} 
-          alt={tag.alt} 
-          {/* shrink-0 keeps the logos from being squished horizontally on mobile */}
-          className="h-8 sm:h-12 md:h-[75px] w-auto object-contain pointer-events-none select-none shrink-0" 
-          loading="lazy"
-        />
-      </span>
-    ))} {/* 👈 FIXED: Properly closed the map function array bracket block */}
-  </div>
+<div className="flex flex-wrap gap-12 justify-center items-center">
+  {[
+    { src: "/cod.jpg", alt: "Cash on Delivery Nationwide" },
+    { src: "/jnt.png", alt: "Jnt Express" },
+    { src: "/lbc.png", alt: "LBC Express" },
+    { src: "/spx.webp", alt: "SPX Express" }
+  ].map((tag) => (
+    <span
+      key={tag.alt}
+      className="flex items-center  border border-white/20 bg-white/5 rounded-xl p-1 transition-transform hover:scale-105"
+    >
+      <img 
+        src={tag.src} 
+        alt={tag.alt} 
+        className="h-[75px] w-auto object-contain" 
+        loading="lazy"
+      />
+    </span>
+  ))}
 </div>
-
     
 <div className="space-y-3">
   <label className="block text-white font-semibold">Pumili ang Package</label>
