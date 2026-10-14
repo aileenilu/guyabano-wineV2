@@ -896,7 +896,7 @@ remove */}
             src="/fda.png" 
             alt="FDA Certified Seal" 
             className="h-12 w-auto sm:h-16 object-contain pointer-events-none select-none"
-            loading="lazy"
+            loading="lazy" 
           />
           <img 
             src="/100.png" 
